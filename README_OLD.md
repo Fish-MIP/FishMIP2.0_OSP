@@ -304,242 +304,261 @@ follow the instructions here:
 
 <table style="width:98%;">
 <colgroup>
-<col style="width: 41%" />
-<col style="width: 10%" />
-<col style="width: 7%" />
+<col style="width: 52%" />
+<col style="width: 13%" />
 <col style="width: 9%" />
-<col style="width: 28%" />
+<col style="width: 12%" />
+<col style="width: 10%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Variable</th>
-<th>Specifier</th>
+<th>Sp ecifier</th>
 <th>Unit</th>
-<th>Resolution</th>
-<th>Datasets</th>
+<th>Res olution</th>
+<th>ESM datasets</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Mass Concentration of Total Phytoplankton Expressed as
-Chlorophyll</td>
+<td>Mass Con centration of Total Phy toplankton Expressed as C
+hlorophyll</td>
 <td><strong>chl</strong></td>
 <td>kg m-3</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
 <td>Sea Floor Depth</td>
-<td><strong>deptho</strong></td>
+<td><ul>
+<li>* deptho**</li>
+</ul></td>
 <td>m</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Downward Flux of Particulate Organic Carbon</td>
-<td><strong>expc-bot</strong></td>
+<td>Downward Flux of P articulate Organic Carbon</td>
+<td><strong>exp c-bot</strong></td>
 <td>mol m-2 s-1</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Particulate Organic Carbon Content</td>
-<td><strong>intpoc</strong></td>
+<td>P articulate Organic Carbon Content</td>
+<td><ul>
+<li>* intpoc**</li>
+</ul></td>
 <td>kg m-2</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Primary Organic Carbon Production by All Types of Phytoplankton</td>
+<td>Primary Organic Carbon Production by All Types of Phy
+toplankton</td>
 <td><strong>intpp</strong></td>
 <td>mol m-2 s-1</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
 <td>Net Primary Organic Carbon Production by Diatoms</td>
-<td><strong>intppdiat</strong></td>
+<td><strong>intp pdiat</strong></td>
 <td>mol m-2 s-1</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Net Primary Mole Productivity of Carbon by Diazotrophs</td>
-<td><strong>intppdiaz</strong></td>
+<td>Net Primary Mole Pr oductivity of Carbon by D iazotrophs</td>
+<td><strong>intp pdiaz</strong></td>
 <td>mol m-2 s-1</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Net Primary Mole Productivity of Carbon by Picophytoplankton</td>
-<td><strong>intpppico</strong></td>
+<td>Net Primary Mole Pr oductivity of Carbon by Pico phy toplankton</td>
+<td><strong>intp ppico</strong></td>
 <td>mol m-2 s-1</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
 <td>Maximum Ocean Mixed Layer Thickness Defined by Sigma T</td>
-<td><strong>mlotst-0125</strong></td>
+<td><ul>
+<li>*mlotst</li>
+</ul>
+<p>-0125**</p></td>
 <td><p>m</p>
 <p>m</p></td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Dissolved Oxygen Concentration</td>
+<td>Dissolved Oxygen Con centration</td>
 <td><p><strong>o2,</strong></p>
-<p><strong>o2-bot</strong></p>
-<p><strong>o2-surf</strong></p></td>
+<p><strong>o 2-bot</strong></p>
+<p><strong>o2 -surf</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p>
 <p>mol m-2</p></td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
 <td>pH</td>
 <td><p><strong>ph</strong></p>
-<p><strong>ph-bot</strong></p>
-<p><strong>ph-surf</strong></p></td>
+<p><strong>p h-bot</strong></p>
+<p><strong>ph -surf</strong></p></td>
 <td><p>1</p>
 <p>1</p>
 <p>1</p></td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Phytoplankton Carbon Concentration</td>
-<td><p><strong>phyc</strong></p>
-<p><strong>phyc-vint</strong></p></td>
+<td>Phy toplankton Carbon Con centration</td>
+<td><ul>
+<li><br />
+</li>
+</ul>
+<p>*phyc**</p>
+<p><strong>phyc -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Mole Concentration of Diatoms expressed as Carbon in sea water</td>
-<td><p><strong>phydiat</strong></p>
-<p><strong>phydiat-vint</strong></p></td>
+<td>Mole Con centration of Diatoms expressed as Carbon in sea water</td>
+<td><p><strong>ph ydiat</strong></p>
+<p><strong>phydiat -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Mole Concentration of Diazotrophs Expressed as Carbon in Sea
+<td>Mole Con centration of D iazotrophs Expressed as Carbon in Sea
 Water</td>
-<td><p><strong>phydiaz</strong></p>
-<p><strong>phydiaz-vint</strong></p></td>
+<td><p><strong>ph ydiaz</strong></p>
+<p><strong>phydiaz -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Mole Concentration of Picophytoplankton Expressed as Carbon in Sea
-Water</td>
-<td><p><strong>phypico</strong></p>
-<p><strong>phypico-vint</strong></p></td>
+<td>Mole Con centration of Pico phy toplankton Expressed as Carbon in
+Sea Water</td>
+<td><p><strong>ph ypico</strong></p>
+<p><strong>phypico -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
 <td>Sea Water Salinity</td>
 <td><p><strong>so</strong></p>
-<p><strong>so-bot</strong></p>
-<p><strong>so-surf</strong></p></td>
+<p><strong>s o-bot</strong></p>
+<p><strong>so -surf</strong></p></td>
 <td><p>‰</p>
 <p>‰<br />
 ‰</p></td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Sea Water Potential Temperature</td>
-<td><strong>thetao</strong></td>
+<td>Sea Water Potential T emperature</td>
+<td><strong>t hetao</strong></td>
 <td>°C</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
 <td>Ocean Model Cell Thickness</td>
-<td><strong>thkcello</strong></td>
+<td><strong>thk cello</strong></td>
 <td>m</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Sea Water Potential Temperature at Sea Floor</td>
+<td>Sea Water Potential T emperature at Sea Floor</td>
 <td><strong>tob</strong></td>
 <td>°C</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Sea Surface Temperature</td>
+<td>Sea Surface T emperature</td>
 <td><strong>tos</strong></td>
 <td>°C</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
 <td>Sea Water X Velocity</td>
 <td><strong>uo</strong></td>
 <td>m s-1</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
 <td>Sea Water Y Velocity</td>
 <td><strong>vo</strong></td>
 <td>m s-1</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Mole Concentration of Mesozooplankton expressed as Carbon in sea
+<td>Mole Con centration of Me soz ooplankton expressed as Carbon in sea
 water</td>
 <td><p><strong>zmeso</strong></p>
-<p><strong>zmeso-vint</strong></p></td>
+<p><strong>zmeso -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Mole Concentration of Microzooplankton expressed as Carbon in sea
+<td>Mole Con centration of Mic roz ooplankton expressed as Carbon in sea
 water</td>
-<td><p><strong>zmicro</strong></p>
-<p><strong>zmicro-vint</strong></p></td>
+<td><p><strong>z micro</strong></p>
+<ul>
+<li>*zmicro</li>
+</ul>
+<p>-vint**</p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Zooplankton Carbon Concentration</td>
-<td><p><strong>zooc</strong></p>
-<p><strong>zooc-vint</strong></p></td>
+<td>Z ooplankton Carbon Con centration</td>
+<td><ul>
+<li><br />
+</li>
+</ul>
+<p>*zooc**</p>
+<p><strong>zooc -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
 <td>Net Downward Shortwave Radiation at Sea Water Surface</td>
-<td><strong>rsntds</strong></td>
+<td><strong>r sntds</strong></td>
 <td>W m-2</td>
 <td>0.25° , 1° grid</td>
-<td>GFDL-MOM6-COBALT2</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
 <td>Sea Ice Area Fraction</td>
-<td><strong>siconc</strong></td>
+<td><strong>s iconc</strong></td>
 <td>%</td>
 <td>0.25° , 1° grid</td>
-<td>Remapped from global JRA-55 re-analysis ice cover</td>
+<td>GFDL, IPSL</td>
 </tr>
 </tbody>
 </table>
