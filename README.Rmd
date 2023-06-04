@@ -40,13 +40,13 @@ Modellers are welcome to redo all previous 3b runs with version of their models 
 
 Timelines for simulations
 
-+---------------------+-----------------------+---------------------+
-| Scenarios           | Models                | Date                |
-+=====================+=======================+=====================+
-| histsoc,soc_2015    | global, regional      | July 1st 2024       |
-+---------------------+-----------------------+---------------------+
-| soc_OSP1, soc_OSP2  | global, regional      | Oct 1st, 2024       |
-+---------------------+-----------------------+---------------------+
++--------------------+---------------------+-------------------+
+| Scenarios          | Models              | Date              |
++====================+=====================+===================+
+| histsoc,soc_2015   | global, regional    | July 1st 2024     |
++--------------------+---------------------+-------------------+
+| soc_OSP1, soc_OSP2 | global, regional    | Oct 1st, 2024     |
++--------------------+---------------------+-------------------+
 
 To aid with progress we will hold specific technical workshops to:
 
@@ -74,57 +74,41 @@ Each model experiment is a set of model simulations that has a particular goal (
 
 ##### Table 1: Experiment set-up. Each experiment is specified by the climate forcing (CF) and Direct Human Forcing (DHF).
 
-+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-| Experiment                      | Historical                                                                                                                                                         | Future      |
-+=================================+====================================================================================================================================================================+=============+
-| **Future**                      | 1.Climate, river inputs, fishing -- high res                                                                                                                       | **obsclim** |
-|                                 |                                                                                                                                                                    |             |
-| 2 core runs                     | -   **CF:** Climate variability constrained by reanalysis atmospheric forcing (GFDL-COBALT2 forced by JRA-55 and river inputs) using **0.25 degree grid**          | **histsoc** |
-|                                 |                                                                                                                                                                    |             |
-|                                 | -   **DHF:** Varying direct human influences according to observed reconstructed fishing effort time series (histsoc).                                             |             |
-+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-|                                 | 2.Climate, river inputs, no fishing -- high res                                                                                                                    | **obsclim** |
-|                                 |                                                                                                                                                                    |             |
-|                                 | -   **CF:**  same as above using **0.25 degree grid**                                                                                                              | **nat**     |
-|                                 |                                                                                                                                                                    |             |
-|                                 | -   **DHF:** without any fishing activity (nat)                                                                                                                    |             |
-+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-| **Riverine influx sensitivity** | 3.Climate, no river input forcing, fishing -- high res                                                                                                             | **obsclim** |
-|                                 |                                                                                                                                                                    |             |
-| 2 optional (but preferred) runs | -   **CF:** Climate variability constrained by reanalysis atmospheric forcing (GFDL-COBALT2 "*control run*" only forced by JRA-55) using **0.25 degree grid**      | **histsoc** |
-|                                 |                                                                                                                                                                    |             |
-|                                 | -   **DHF:** Varying direct human influences according to observed reconstructed fishing effort time series (histsoc).                                             |             |
-+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-|                                 | 4.Climate, no river input forcing, no fishing -- high res                                                                                                          | **obsclim** |
-|                                 |                                                                                                                                                                    |             |
-|                                 | -   **CF:**  same as above using **0.25 degree grid**                                                                                                              | **nat**     |
-|                                 |                                                                                                                                                                    |             |
-|                                 | -   **DHF:** without any fishing activity (nat)                                                                                                                    |             |
-+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-| **Resolution sensitivity test** | 5.Climate, river input forcing, fishing -- low res                                                                                                                 | **obsclim** |
-|                                 |                                                                                                                                                                    |             |
-| 2 optional runs                 | -   **CF:** Climate variability constrained by reanalysis atmospheric forcing (GFDL-COBALT2 forced by JRA-55 and river inputs **obsclim**) using **1 degree grid** | **histsoc** |
-|                                 |                                                                                                                                                                    |             |
-|                                 | -   **DHF:** Varying direct human influences according to observed reconstructed fishing effort time series (histsoc).                                             |             |
-+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-|                                 | 6.Climate, river input forcing, no fishing -- low res                                                                                                              | **obsclim** |
-|                                 |                                                                                                                                                                    |             |
-|                                 | -   **CF**:  same as above using **1 degree grid**                                                                                                                 | **nat**     |
-|                                 |                                                                                                                                                                    |             |
-|                                 | -   **DHF:** without any fishing activity (nat)                                                                                                                    |             |
-+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-| **Control sensitivity test**    | 7.Climate, river input forcing, fishing -- low res                                                                                                                 | **obsclim** |
-|                                 |                                                                                                                                                                    |             |
-| 2 optional runs                 | -   **CF:** Climate variability constrained by reanalysis atmospheric forcing (GFDL-COBALT2 forced by JRA-55 and river inputs **obsclim**) using **1 degree grid** | **histsoc** |
-|                                 |                                                                                                                                                                    |             |
-|                                 | -   **DHF:** Varying direct human influences according to observed reconstructed fishing effort time series (histsoc).                                             |             |
-+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-|                                 | 8.Climate, river input forcing, no fishing -- low res                                                                                                              | **obsclim** |
-|                                 |                                                                                                                                                                    |             |
-|                                 | -   **CF**:  same as above using **1 degree grid**                                                                                                                 | **nat**     |
-|                                 |                                                                                                                                                                    |             |
-|                                 | -   **DHF:** without any fishing activity (nat)                                                                                                                    |             |
-+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
++----+------------------------------+----------------------------------------------------------------------------+----------------------+---------------------+
+|    | Experiment                   | Short description                                                          | Historical           | Future              |
++====+==============================+============================================================================+======================+=====================+
+| 1  | **Pre-industrial control**   | **Climate**: No climate change, fixed 1850s CO~`2`~ levels                 | picontrol            | picontrol           |
+|    |                              |                                                                            |                      |                     |
+|    | nat                          | **F ishing**: No fishing                                                   | nat                  | nat                 |
++----+------------------------------+----------------------------------------------------------------------------+----------------------+---------------------+
+| 2  | **Pr e-i ndustrial control** | **C limate**: No climate change, fixed 1850s CO~`2`~ levels                | picontrol            | picontrol           |
+|    |                              |                                                                            |                      |                     |
+|    | histsoc                      | **F ishing**: H istorical fishing effort, then future fixed at 2015 levels | histsoc              | 2015soc             |
++----+------------------------------+----------------------------------------------------------------------------+----------------------+---------------------+
+| 3  | **S SP1 -RCP2.6**            | **C limate**: Simulated historical climate, then SS P1-RCP2.6 climate      | h istorical          | ssp126              |
+|    |                              |                                                                            |                      |                     |
+|    | nat                          | **Fis hing**:No fishing                                                    | nat                  | nat                 |
++----+------------------------------+----------------------------------------------------------------------------+----------------------+---------------------+
+| 4  | **SSP1 -RCP2.6**             | **Climate**: Simulated h istorical climate, then SS P1-RCP2.6 climate      | h istorical          | ssp126              |
+|    |                              |                                                                            |                      |                     |
+|    | histsoc                      | **F ishing**: H istorical fishing effort, then future fixed at 2015 levels | histsoc              | 2015soc             |
++----+------------------------------+----------------------------------------------------------------------------+----------------------+---------------------+
+| 5  | **S SP1 -RCP2.6**            | **C limate**: Simulated h istorical climate, then SS P1-RCP2.6 climate     | h istorical          | ssp126              |
+|    |                              |                                                                            |                      |                     |
+|    | OSP1                         | **F ishing**: H istorical fishing effort, then change driven by OSP1       | histsoc              | OSP1soc             |
++----+------------------------------+----------------------------------------------------------------------------+----------------------+---------------------+
+| 6  | **S SP5 -RCP8.5**            | **C limate**: Simulated h istorical climate, then SS P5-RCP2.6 climate     | h istorical          | ssp585              |
+|    |                              |                                                                            |                      |                     |
+|    | nat                          | **F ishing**: No fishing                                                   | nat                  | nat                 |
++----+------------------------------+----------------------------------------------------------------------------+----------------------+---------------------+
+| 7  | **S SP5 -RCP8.5**            | **C limate**: Simulated h istorical climate, then SS P5-RCP8.5 climate     | h istorical          | ssp585              |
+|    |                              |                                                                            |                      |                     |
+|    | histsoc                      | **F ishing**: H istorical fishing effort, then held fixed at 2015 levels   | histsoc              | 2015soc             |
++----+------------------------------+----------------------------------------------------------------------------+----------------------+---------------------+
+| 8  | **S SP5 -RCP8.5**            | **C limate**: Simulated h istorical climate, then SS P5-RCP8.5 climate     | h istorical          | ssp585              |
+|    |                              |                                                                            |                      |                     |
+|    | OSP2soc?                     | **F ishing**: H istorical fishing effort, then change driven by OSP2       | histsoc              | OSP2soc             |
++----+------------------------------+----------------------------------------------------------------------------+----------------------+---------------------+
 
 #### Note on spin-up and transition period (1841-1960), and historical (experiment) period 1961-2010
 
@@ -190,19 +174,15 @@ Each model experiment is a set of model simulations that has a particular goal (
 
 ##### Table 5: Climate forcing
 
-+------------+-------------+---------------------------------------------+------------+
-| Title      | Specifiers  | Institution                                 | Original   |
-|            |             |                                             | resolution |
-+:===========+:============+:============================================+:===========+
-| GFDLESM4   | gfdlesm4    | National Oceanic and Atmospheric            | 288x180    |
-|            |             | Administration, Geophysical Fluid Dynamics  |            |
-|            |             | Laboratory, Princeton, NJ 08540, USA        |            |
-+------------+-------------+---------------------------------------------+------------+
-| IPSLCM6ALR | ipslcm6a-lr | Institut Pierre Simon Laplace, Paris 75252, | 144x143    |
-|            |             | France                                      |            |
-+------------+-------------+---------------------------------------------+------------+
-| OTHERS??   |             |                                             |            |
-+------------+-------------+---------------------------------------------+------------+
++------------+-------------+------------------------------------------------------------------------------------------------------------------+---------------------+
+| Title      | Specifiers  | Institution                                                                                                      | Original resolution |
++:===========+:============+:=================================================================================================================+:====================+
+| GFDLESM4   | gfdlesm4    | National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA | 288x180             |
++------------+-------------+------------------------------------------------------------------------------------------------------------------+---------------------+
+| IPSLCM6ALR | ipslcm6a-lr | Institut Pierre Simon Laplace, Paris 75252, France                                                               | 144x143             |
++------------+-------------+------------------------------------------------------------------------------------------------------------------+---------------------+
+| OTHERS??   |             |                                                                                                                  |                     |
++------------+-------------+------------------------------------------------------------------------------------------------------------------+---------------------+
 
 ##### Table 6. Climate forcing variables and units for FishMIP 3a simulations. All variables are available on a 0.25 and 1 degree horizontal grid, monthly and annual resolutions. Note: Some variables are available as specific layers extracted from vertically resolved data. Their variable names have been suffixed with -bot (ocean bottom, e.g. o2-bot), -surf (surface values, e.g. pH-surf) or -vint (vertically integrated, e.g. phyc-vint), respectively, or prefixed with int (vertically integrated, e.g. intpp). Temperature is suffixed with b or s for bottom (e.g. tob) or surface (e.g. tos) layers, respectively.
 
