@@ -584,32 +584,29 @@ provided here: <https://github.com/Fish-MIP/FishMIP_extracting-data>
 
 ##### Table 7: Fishing effort forcing files and variables for FishMIP 3b simulations.
 
+##### Table 7: Fishing effort forcing files and variables for FishMIP 3b simulations.
+
 <table style="width:99%;">
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 46%" />
-<col style="width: 5%" />
-<col style="width: 32%" />
+<col style="width: 12%" />
+<col style="width: 67%" />
+<col style="width: 12%" />
+<col style="width: 7%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Dataset</th>
-<th>Included variables (short names)</th>
-<th><p>Time period/</p>
-<p>Resolution</p></th>
-<th>Reference/Source and Comments</th>
+<th>Specifier</th>
+<th>Included variables (short names) and definitions</th>
+<th>Time pe riod /Resolution</th>
+<th>Filename</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>File name</td>
-<td><code>socioeconomic/fishing/histsoc/effort_histsoc_1841_2010.csv</code></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Spatially aggregated fishing effort</td>
-<td><ul>
+<td>histsoc</td>
+<td><p>NomActive = Nominal fishing effort of the active fleet
+dis-aggregated by:</p>
+<ul>
 <li><p>eez_country_name = The exclusive economic zone/high seas name in
 which fishing effort is occurring</p></li>
 <li><p>LME = A number code of the Large Marine ecosystem in which the
@@ -620,70 +617,115 @@ Around Us numbering</p></li>
 <li><p>FGroup = the targeted functional group</p></li>
 <li><p>Sector = the fishing sector defined by the law of the
 country</p></li>
-<li><p>NomActive = Nominal fishing effort of the active fleet</p></li>
-<li><p>Phase = either “spin-up” or “experiment”</p></li>
 </ul></td>
 <td><ul>
-<li><p>1841-2010</p></li>
+<li><p>1850-2015</p></li>
 <li><p>Annual</p></li>
 </ul></td>
-<td>Sources: Rousseau et al., 2019, PNAS 116 (25) 12238-12243 and
-Rousseau et al. 2022 in prep.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2015soc</td>
+<td>Final year of values from histsoc repeated until 2100</td>
+<td><ul>
+<li><p>2015-2100</p></li>
+<li><p>Annual</p></li>
+</ul></td>
+<td></td>
 </tr>
 <tr class="odd">
-<td>File name</td>
-<td><code>socioeconomic/fishing/histsoc/gridded_industrial_effort_histsoc_1961_2010.csv</code></td>
+<td>OSP1soc</td>
+<td>Which variables? Determined from % change relative to 2015 in
+SSP1Population, SSP1GDP and relative change to 2015 (drivers of?)
+fishing effort</td>
+<td><ul>
+<li><p>2015-2100</p></li>
+<li><p>Annual</p></li>
+</ul></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>OSP2soc</td>
+<td>Which variables? Determined from % change relative to 2015 in
+SSP5Population, SSP5GDP and relative change to 2015 (drivers of?)
+fishing effort</td>
+<td><ul>
+<li><p>2015-2100</p></li>
+<li><p>Annual</p></li>
+</ul></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>H istorical P opulation</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Gridded total industrial fishing effort</td>
-<td><ul>
-<li>NomActive = Total nominal active fishing effort for the industrial
-sector summed across functional groups, gear, fishing country.</li>
-</ul></td>
-<td><ul>
-<li><p>0.5</p></li>
-<li><p>1841-2010</p></li>
-<li><p>Annual</p></li>
-</ul></td>
-<td>Rousseau et al. 2022 in prep.</td>
+<td>H istorical GDP</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
-<td>File name</td>
-<td><code>socioeconomic/fishing/histsoc/gridded_artisanal_effort_histsoc_1961_2010.csv</code></td>
+<td>OTHERS?</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Gridded total artisanal fishing effort</td>
-<td><ul>
-<li>NomActive = Total nominal active fishing effort for the artisanal
-sector summed across functional groups, gear, fishing country.</li>
-</ul></td>
-<td><ul>
-<li><p>0.5</p></li>
-<li><p>1841-2010</p></li>
-<li><p>Annual</p></li>
-</ul></td>
-<td>Rousseau et al. 2022 in prep.</td>
+<td>SSP1 P opulation</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>SSP1 GDP</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>SSP5 P opulation</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>SSP5 GDP</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 
-##### Table 8: Metadata for fishing effort variables.
+##### Table 8: Metadata for histsoc fishing effort variables.
 
-| Variable Name    | Long name                                                                                | Unit             | Description/notes                                                                                                                                                                                                                                                                                          |
-|:-----------------|:-----------------------------------------------------------------------------------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Year             | (End of the) year when the fishing effort is occurring                                   | Number code      |                                                                                                                                                                                                                                                                                                            |
-| Sector           | The fishing sector defined by the law of the country                                     | Name code        | I = Industrial and A = artisanal, where artisanal include powered and unpowered artisanal fleets                                                                                                                                                                                                           |
-| LME              | Large Marine Ecosystem Number                                                            | Number code      | A number code of the Large Marine ecosystem in which the Effort is occurring                                                                                                                                                                                                                               |
-| eez_country_name | Exclusive Economic Zone                                                                  | Name code        | The country-level exclusive economic zone (or high seas) name in which fishing effort is occurring                                                                                                                                                                                                         |
-| SAUP             | A number code for the fishing country, following Sea Around Us numbering                 | Number code      | Ex supranational entities (USSR, Yugoslavia) are disaggregated to their constituent countries. Serbian Fishing Effort included with Montenegro. Crimea included with Ukrainian.                                                                                                                            |
-| Gear             | The fishing gear                                                                         | Name code        | Gear names                                                                                                                                                                                                                                                                                                 |
-| FGroup           | The targeted functional group                                                            | Name code        | Functional groups are in accordance with those used by the Sea Around Us Project                                                                                                                                                                                                                           |
-| NomActive        | Nominal fishing effort (i.e., not including the technological creep) of the active fleet | Days at sea X kW | NomActive (of the active fleet; i.e., total) = P (engine power of active the fleet; i.e., total) x DAS (average days at sea of one vessel). Average DAS for one vessel \~ 200 DAS/year. NomActive corresponds to the total (reported, IUU, discards) catch. To find NomActive in DAS do (NomActive/P) X NV |
-| Phase            | Phase (year ranges) of simulation run                                                    | Text             | Spin-up, transition, experiment, or validation                                                                                                                                                                                                                                                             |
+| Va riable Name      | Long name                                                                                     | Unit             | Description/notes                                                                                                                                                                                                                                                                                          |
+|:--------------------|:----------------------------------------------------------------------------------------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Year                | (End of the) year when the f ishing effort is occ urring                                      | Number code      |                                                                                                                                                                                                                                                                                                            |
+| Sector              | The f ishing sector d efined by the law of the c ountry                                       | Name code        | I = Industrial and A = artisanal, where artisanal include powered and unpowered artisanal fleets                                                                                                                                                                                                           |
+| LME                 | Large Marine Eco system Number                                                                | Number code      | A number code of the Large Marine ecosystem in which the Effort is occurring                                                                                                                                                                                                                               |
+| eez\_ countr y_name | Exc lusive Ec onomic Zone                                                                     | Name code        | The country-level exclusive economic zone (or high seas) name in which fishing effort is occurring                                                                                                                                                                                                         |
+| SAUP                | A number code for the f ishing co untry, fol lowing Sea Around Us num bering                  | Number code      | Ex supranational entities (USSR, Yugoslavia) are disaggregated to their constituent countries. Serbian Fishing Effort included with Montenegro. Crimea included with Ukrainian.                                                                                                                            |
+| Gear                | The f ishing gear                                                                             | Name code        | Gear names                                                                                                                                                                                                                                                                                                 |
+| FGroup              | The ta rgeted func tional group                                                               | Name code        | Functional groups are in accordance with those used by the Sea Around Us Project                                                                                                                                                                                                                           |
+| Nom Active          | N ominal f ishing effort (i.e., not inc luding the t echnol ogical creep) of the active fleet | Days at sea X kW | NomActive (of the active fleet; i.e., total) = P (engine power of active the fleet; i.e., total) x DAS (average days at sea of one vessel). Average DAS for one vessel \~ 200 DAS/year. NomActive corresponds to the total (reported, IUU, discards) catch. To find NomActive in DAS do (NomActive/P) X NV |
+
+##### Table 9: Details for OSP relative change in drivers of fishing effort variables.
+
+| OSP  | Variable | Change relative to 2015 |
+|------|----------|-------------------------|
+| OSP1 | ????     | ????                    |
+| OSP2 | ????     | ????                    |
+
+#### Implementation of OSPs
+
+TO DO: We provide code examples showing how to implement the OSPs… NEED
+TO ADD TO GITHUB REPO
+
+##### Table 8: Metadata for fishing effort variables.
 
 #### Fishing effort forcing file locations
 
