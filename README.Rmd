@@ -137,6 +137,22 @@ Each model experiment is a set of model simulations that has a particular goal (
 |       |                                                                           | **Fishing**: OSP1-5 future fisheries dynamics (matched to each SSP, e.g. SSP1RCP2.6 would use OSP1) | OSP\<x\>soc                 |                           |
 +-------+---------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------+---------------------------+
 
+#### Additional policy-experiment runs
+
+The above runs will allow us to provide IPCC advice regarding key risks under climate change. We will add additional runs later in the timeline.
+
++------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-----------------------------+-------------+
+| No.        | Simulation                                                                    | Short description                                                             | Time period and specifiers  | Phase       |
++============+===============================================================================+===============================================================================+=============================+=============+
+| 1          | **SSPs2-RCP4.5 with climate change and OSP2 fishing, but \<NO MANAGEMENT\>**  | **Climate**: SSP-RCP climate scenario, (e.g. SSP1RCP2.6, SSP5RCP8.5)          | historical                  | 3, optional |
+|            |                                                                               |                                                                               |                             |             |
+|            |                                                                               | **Fishing**: OSP2- future fisheries dynamics but with MANAGEMENT switched off | OSP2soc                     |             |
++------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-----------------------------+-------------+
+|            | **SSPs2-RCP4.5 with climate change and OSP2 fishing, but \<NO MPAS\>**        | **Climate**: SSP-RCP climate scenario, (e.g. SSP1RCP2.6, SSP5RCP8.5)          | historical                  | 3, optional |
+|            |                                                                               |                                                                               |                             |             |
+|            |                                                                               | **Fishing**: OSP2- future fisheries dynamics but with MPAs switched off       | OSP2soc                     |             |
++------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-----------------------------+-------------+
+
 #### Scenario definitions
 
 | Throughout the protocol we use 'specifiers' that are shortened names used to denote a particular scenario, variables, or other parameter in the filenames of model inputs and outputs. It is crucial that you also use the same specifiers in your output files.
@@ -358,6 +374,8 @@ A simple worked example on how to do this for specific regions in R is provided 
 | SSP5P opulation       |                                                                                                                                                |                         |          |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+----------+
 | SSP5 GDP              |                                                                                                                                                |                         |          |
++-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+----------+
+| MPAs                  | NEED TO MAKE THIS (Kelsey , Derek)                                                                                                             |                         |          |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+----------+
 
 ##### Table 8: Metadata for histsoc fishing effort variables.
