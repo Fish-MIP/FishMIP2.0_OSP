@@ -11,7 +11,7 @@
 
 [Climate forcing \[6\]](#climate-forcing)
 
-[Fishing effort forcing \[11\]](#fishing-effort-forcing)
+[Fishing forcing \[11\]](#fishing-effort-forcing)
 
 [Output data \[14\]](#output-data)
 
@@ -24,32 +24,41 @@
 
 ## Goal
 
-The goal of the FishMIP “Ocean Futures” Protocol is to extend 3b CMIP
-climate projections to include:
+The goal of FishMIP’s “Fish Futures” Protocol is to assess adaptation
+pathways to climate change under different societal and fisheries
+management development pathways. This simulation round extends our
+previous CMIP6 climate impact projections to include past and future
+fisheries development to enable us to identify key risks and adaptation
+to climate change including consequences for biodiversity, fisheries and
+food security.
 
-2)  exploring fishing impacts in addition to those of climate, including
-    future projections with fishing under a range of socio-economic
-    scenarios (aligned with SSPs, Maury et al. IN PREP);
+The future scenarios we are using have been developed to be consistent
+with each of the [Shared Socioeconomic
+Pathways](https://www.climateforesight.eu/seeds/shared-socioeconomic-pathways/),
+but with explicit additional details needed for fisheries and
+aquaculture development, are called Ocean System Pathways (OSPs) (Maury
+et al. 2023 - TO BE SUBMITTED).
 
-3)  comparison to a no-climate change preindustrial control baseline
-    (which was not available for the last round of simulations), and
+This protocol provides details on the experimental set-up and data
+forcings required to run each of these scenarios, with and without
+climate change.
 
-4)  if possible, building on the 3a model evaluation simulation round,
-    model benchmarking against observed catches.
+Note that this protocol builds on the FishMIP’s [“CMIP6” Phase
+1](https://github.com/Fish-MIP/FishMIP_2023_3b_Protocol/blob/main/FishMIP_Phase1_2020_CMIP6_runs_protocol_v1.0.pdf)
+protocol which focused primarily on results without fishing, for
+fast-track inclusion in the IPCC 6th Assessment. Modellers are welcome
+to redo previous Phase 1 runs with new versions of their models that
+have had improvements following the FishMIP [“Model
+Evaluation”](https://github.com/Fish-MIP/FishMIP_2022_3a_Protocol)
+protocol round.
 
-Note that this FishMIP Phase 2 protocol builds on the Phase 1 2020
-protocol which focussed primarily on results without fishing for
-inclusion in the IPCC 5th Assessment.
+Timelines for simulations: TO BE DISCUSSED
 
-Modellers are welcome to redo all previous 3b runs with version of their
-models that have had improvmets following the 3a model evaluation round.
-
-Timelines for simulations
-
-| Scenarios          | Models           | Date          |
-|--------------------|------------------|---------------|
-| histsoc,soc_2015   | global, regional | July 1st 2024 |
-| soc_OSP1, soc_OSP2 | global, regional | Oct 1st, 2024 |
+| Scenarios                     | Models           | Date          |
+|-------------------------------|------------------|---------------|
+| Historical (See Table X)      | global, regional | July 1st 2024 |
+| OSPs (See Table X)            | global, regional | Oct 1st, 2024 |
+| Additional runs (See Table X) | global           |               |
 
 To aid with progress we will hold specific technical workshops to:
 
@@ -69,7 +78,9 @@ scenarios. In Section 5 we describe the set of **outputs** to be
 created. Finally in Sections 6-7 we provide further **notes** and
 **instructions** on how to report and upload model results.
 
-Further information on this protocol can be found here:
+This protocal is a contribution to the wider Inter-Sectoral Model
+Intercomparison Project (ISIMIP3b) simulation round, further details can
+be found here:
 
 [https://protocol.isimip.org/#ISIMIP3b/marine-fishery_regional/marine-fishery_global](https://protocol.isimip.org/)
 
@@ -81,167 +92,172 @@ Each model experiment is a set of model simulations that has a
 particular goal (e.g. model evaluation). A scenario is a particular
 setting for forcing drivers that describes how each model run should be
 set up in the experiment, including both the type of climate forcing
-(CF) and the type of direct human forcing (DHF).
+(CF) and the type of direct human forcing (DHF). All model runs are to
+be carried out using each Earth System Model ().
 
-**Below we summarise the simulation experiments for both Phase 1 and
-Phase 2 of the 3b simulation round. Modellers that have already
-completed Phase 1 can skip to Phase 2. below. Please prioritize the core
+**Modellers that have already completed Phase 1 runs can skip to Phase 2
+below, unless they wish to update runs based on improvements since the
+Model Evaluation simulation round. Please prioritize the core ‘priority’
 runs below, and provide the ‘optional’ if possible.**
 
-##### Table 1: Experiment set-up. Each experiment is specified by the climate forcing (CF) and Direct Human Forcing (DHF).
+##### Table 1: Control run and historical simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
 
 <table style="width:98%;">
 <colgroup>
-<col style="width: 3%" />
-<col style="width: 19%" />
-<col style="width: 47%" />
+<col style="width: 5%" />
+<col style="width: 24%" />
+<col style="width: 38%" />
+<col style="width: 15%" />
 <col style="width: 14%" />
-<col style="width: 13%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th></th>
+<th>No.</th>
 <th>Experiment</th>
 <th>Short description</th>
-<th>Historical</th>
-<th>Future</th>
+<th>Time period and specifiers</th>
+<th>Phase</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td><p><strong>Pre-industrial control</strong></p>
-<p>nat</p></td>
+<td><strong>Pre-industrial control</strong></td>
 <td><p><strong>Climate</strong>: No climate change, fixed 1850s
 CO<sub><code>2</code></sub> levels</p>
-<p><strong>F ishing</strong>: No fishing</p></td>
-<td><p>picontrol</p>
+<p><strong>Fishing</strong>: No fishing</p></td>
+<td><p>1850-2100</p>
+<p>picontrol</p>
 <p>nat</p></td>
-<td><p>picontrol</p>
-<p>nat</p></td>
+<td>1 (optional re-runs only)</td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td><p><strong>Pr e-i ndustrial control</strong></p>
-<p>histsoc</p></td>
-<td><p><strong>C limate</strong>: No climate change, fixed 1850s
+<td><strong>Historical fishing effort, no climate</strong></td>
+<td><p><strong>Climate</strong>: No climate change, fixed 1850s
 CO<sub><code>2</code></sub> levels</p>
-<p><strong>F ishing</strong>: H istorical fishing effort, then future
-fixed at 2015 levels</p></td>
-<td><p>picontrol</p>
+<p><strong>Fishing</strong>: Historical fishing effort, forced directly
+by effort data</p></td>
+<td><p>1850-2014</p>
+<p>picontrol</p>
 <p>histsoc</p></td>
-<td><p>picontrol</p>
-<p>2015soc</p></td>
+<td>1 (optional re-runs only)</td>
 </tr>
 <tr class="odd">
 <td>3</td>
-<td><p><strong>S SP1 -RCP2.6</strong></p>
-<p>nat</p></td>
-<td><p><strong>C limate</strong>: Simulated historical climate, then SS
-P1-RCP2.6 climate</p>
-<p><strong>Fis hing</strong>:No fishing</p></td>
-<td><p>h istorical</p>
-<p>nat</p></td>
-<td><p>ssp126</p>
-<p>nat</p></td>
+<td><strong>Historical fishing dynamics, no climate</strong></td>
+<td><p><strong>Climate</strong>: No climate change, fixed 1850s
+CO<sub><code>2</code></sub> levels</p>
+<p><strong>Fishing</strong>: Historical fishing dynamics, forced by OSP
+drivers</p></td>
+<td><p>1850-2014</p>
+<p>picontrol</p>
+<p>histsocOSP</p></td>
+<td>2 (priority)</td>
 </tr>
 <tr class="even">
 <td>4</td>
-<td><p><strong>SSP1 -RCP2.6</strong></p>
-<p>histsoc</p></td>
-<td><p><strong>Climate</strong>: Simulated h istorical climate, then SS
-P1-RCP2.6 climate</p>
-<p><strong>F ishing</strong>: H istorical fishing effort, then future
-fixed at 2015 levels</p></td>
-<td><p>h istorical</p>
-<p>histsoc</p></td>
-<td><p>ssp126</p>
-<p>2015soc</p></td>
+<td><strong>Historical climate only</strong></td>
+<td><p><strong>Climate</strong>: Simulated<strong>/reanalysis?</strong>
+historical climate change</p>
+<p><strong>Fishing</strong>: No fishing</p></td>
+<td><p>1850-2014</p>
+<p>historical</p>
+<p>nat</p></td>
+<td>1 (optional re-runs only)</td>
 </tr>
 <tr class="odd">
 <td>5</td>
-<td><p><strong>S SP1 -RCP2.6</strong></p>
-<p>OSP1</p></td>
-<td><p><strong>C limate</strong>: Simulated h istorical climate, then SS
-P1-RCP2.6 climate</p>
-<p><strong>F ishing</strong>: H istorical fishing effort, then change
-driven by OSP1</p></td>
-<td><p>h istorical</p>
+<td><strong>Historical climate and fishing effort</strong></td>
+<td><p><strong>Climate</strong>: Simulated<strong>/reanalysis?</strong>
+historical climate change</p>
+<p><strong>Fishing</strong>: Historical fishing effort, forced directly
+by effort data</p></td>
+<td><p>1850-2014</p>
+<p>historical</p>
 <p>histsoc</p></td>
-<td><p>ssp126</p>
-<p>OSP1soc</p></td>
+<td>1 (optional re-runs only)</td>
 </tr>
 <tr class="even">
 <td>6</td>
-<td><p><strong>S SP5 -RCP8.5</strong></p>
-<p>nat</p></td>
-<td><p><strong>C limate</strong>: Simulated h istorical climate, then SS
-P5-RCP2.6 climate</p>
-<p><strong>F ishing</strong>: No fishing</p></td>
-<td><p>h istorical</p>
-<p>nat</p></td>
-<td><p>ssp585</p>
-<p>nat</p></td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td><p><strong>S SP5 -RCP8.5</strong></p>
-<p>histsoc</p></td>
-<td><p><strong>C limate</strong>: Simulated h istorical climate, then SS
-P5-RCP8.5 climate</p>
-<p><strong>F ishing</strong>: H istorical fishing effort, then held
-fixed at 2015 levels</p></td>
-<td><p>h istorical</p>
-<p>histsoc</p></td>
-<td><p>ssp585</p>
-<p>2015soc</p></td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td><p><strong>S SP5 -RCP8.5</strong></p>
-<p>OSP2soc?</p></td>
-<td><p><strong>C limate</strong>: Simulated h istorical climate, then SS
-P5-RCP8.5 climate</p>
-<p><strong>F ishing</strong>: H istorical fishing effort, then change
-driven by OSP2</p></td>
-<td><p>h istorical</p>
-<p>histsoc</p></td>
-<td><p>ssp585</p>
-<p>OSP2soc</p></td>
+<td><strong>Historical climate and fishing dynamics</strong></td>
+<td><p><strong>Climate</strong>: Simulated<strong>/reanalysis?</strong>
+historical climate change</p>
+<p><strong>Fishing</strong>: Historical fishing dynamics, forced by OSP
+drivers</p></td>
+<td><p>1850-2014</p>
+<p>historical</p>
+<p>histOSP</p></td>
+<td>2 (priority)</td>
 </tr>
 </tbody>
 </table>
 
-#### Note on spin-up and transition period (1841-1960), and historical (experiment) period 1961-2010
+#### Note on spin-up period (pre-1850)
 
-The focal historical period for this model evaluation experiment spans
-1961-2010. To capture the transition from a pre-industrial spin-up to
-1961 we also provide input for a gradual increase in fishing and
-environmental variability for the pre-industrial period to 1961.  
+For fishing effort prior to 1850 hold fishing at 1850 levels.  
   
-For fishing effort prior to 1961, we provide input for a nominal spin-up
-(1841-1860, fishing held constant at 1861 levels) and pre-industrial
-transition period (1861-1960, reconstructed fishing effort).  
-  
-To set-up climate-forcing variables for the entire 1841-1960 period, we
-ask modellers to use the “control run” (ctrlclim) monthly output for the
-years 1961-1980 (inclusive) on repeat for six cycles. These years have
-been selected because they correspond with an entire ENSO cycle and
-because no climate trend is detectable prior to 1980 from the GFDL
-model.  
-  
-For models that require longer spin-up prior to 1841, please keep 1841
-levels of fishing effort constant and, if needed, repeat the ENSO cycle
-(e.g. monthly values for 1961-1980 inclusive from ctrlclim) for as many
-times necessary.  
-  
-For the ‘no fishing’ runs (nat), the spin-up and pre-industrial
-transition should not use any fishing effort.  
-  
-We ask modellers to include all outputs from 1841 onwards for use in our
-evaluation assessment of model drift. Each output should be saved as two
-files, the first covering the spin-up and transition period (1841-1960)
-and the second covering the histirical (experiment) period (1961-2010).
+For the ‘no fishing’ runs (nat), the spin-up should not use any fishing
+effort.  
+
+##### Table 2: Future scenarios simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
+
+<table style="width:99%;">
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 30%" />
+<col style="width: 41%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>No.</th>
+<th>Simulation</th>
+<th>Short description</th>
+<th>Time period and specifiers</th>
+<th>Phase</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1-5</td>
+<td><strong>All SSPs (1-5), no climate change, OSP1-5
+fishing</strong></td>
+<td><p><strong>Climate</strong>: No climate change</p>
+<p><strong>Fishing</strong>: OSP1-5 future fisheries dynamics (following
+on from historical OSP)</p></td>
+<td><p>2015-2100</p>
+<p>picontrol</p>
+<p>OSP1soc</p></td>
+<td>2, priority</td>
+</tr>
+<tr class="even">
+<td>6-10</td>
+<td><strong>All SSPs with climate change (SSP1RCP2.6, SSP5RCP8.5) , no
+fishing</strong></td>
+<td><p><strong>Climate</strong>: SSP-RCP climate scenarios
+(e.g. SSP1RCP2.6, SSP5RCP8.5)</p>
+<p><strong>Fishing</strong>: No fishing</p></td>
+<td><p>2015-2100</p>
+<p>ssp&lt;scen&gt;</p>
+<p>nat</p></td>
+<td>1 (optional re-runs only)</td>
+</tr>
+<tr class="odd">
+<td>11-15</td>
+<td><strong>All SSPs with climate change (SSP1RCP2.6, SSP5RCP8.5) and
+OSP fishing</strong></td>
+<td><p><strong>Climate</strong>: SSP-RCP climate scenario,
+(e.g. SSP1RCP2.6, SSP5RCP8.5)</p>
+<p><strong>Fishing</strong>: OSP1-5 future fisheries dynamics (matched
+to each SSP, e.g. SSP1RCP2.6 would use OSP1)</p></td>
+<td><p>historical</p>
+<p>OSP&lt;x&gt;soc</p></td>
+<td>2 priority</td>
+</tr>
+</tbody>
+</table>
 
 #### Scenario definitions
 
@@ -260,7 +276,7 @@ output files (see 
 [7](https://protocol.isimip.org/#reporting-model-results). Reporting
 model results).
 
-##### Table 2: Climate scenario specifiers (climate-scenario).
+##### Table 3: Climate scenario specifiers (climate-scenario).
 
 | **Scenario specifier** | **Description**                                                       |
 |:-----------------------|:----------------------------------------------------------------------|
@@ -270,14 +286,13 @@ model results).
 | ssp585                 | SSP5-RCP8.5 climate as simulated by the ESMs.                         |
 | sspXXX                 | ANY OTHERS?                                                           |
 
-##### Table 3: Socio-economic scenario specifiers (soc-scenario).
+##### Table 4: Socio-economic scenario specifiers (soc-scenario).
 
 | **Scenario specifier** | **Description**                                                                                                     |
 |:-----------------------|:--------------------------------------------------------------------------------------------------------------------|
 | **histsoc**            | Varying direct human influences in the historical period (1850-2014) (i.e. historical estimates of fishing effort). |
 | **2015soc**            | Fixed year-2015 direct human influences (i.e. fishing effort).                                                      |
-| OSPX                   | Future fishing determined by SSP and OSP driver forcings for OSPX                                                   |
-| OSPX                   | Future fishing determined by SSP and OSP driver forcings for OSPX                                                   |
+| **OSP\<x\>soc**        | Future fishing determined by SSP and OSP driver forcings for OSP\<x\>, where \<x\> is 1-5.                          |
 | **nat**                | No fishing (naturalized run).                                                                                       |
 
 **Please remember to use these same specifiers in your output files.
@@ -304,7 +319,7 @@ follow the instructions here:
 
 <table style="width:98%;">
 <colgroup>
-<col style="width: 52%" />
+<col style="width: 51%" />
 <col style="width: 13%" />
 <col style="width: 9%" />
 <col style="width: 12%" />
@@ -313,16 +328,16 @@ follow the instructions here:
 <thead>
 <tr class="header">
 <th>Variable</th>
-<th>Sp ecifier</th>
+<th>Specifier</th>
 <th>Unit</th>
-<th>Res olution</th>
+<th>Resolution</th>
 <th>ESM datasets</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Mass Con centration of Total Phy toplankton Expressed as C
-hlorophyll</td>
+<td>Mass Concentration of Total Phytoplankton Expressed as
+Chlorophyll</td>
 <td><strong>chl</strong></td>
 <td>kg m-3</td>
 <td>0.25° , 1° grid</td>
@@ -330,9 +345,7 @@ hlorophyll</td>
 </tr>
 <tr class="even">
 <td>Sea Floor Depth</td>
-<td><ul>
-<li>* deptho**</li>
-</ul></td>
+<td>*deptho**</td>
 <td>m</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
@@ -346,16 +359,13 @@ hlorophyll</td>
 </tr>
 <tr class="even">
 <td>P articulate Organic Carbon Content</td>
-<td><ul>
-<li>* intpoc**</li>
-</ul></td>
+<td>* intpoc**</td>
 <td>kg m-2</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Primary Organic Carbon Production by All Types of Phy
-toplankton</td>
+<td>Primary Organic Carbon Production by All Types of Phytoplankton</td>
 <td><strong>intpp</strong></td>
 <td>mol m-2 s-1</td>
 <td>0.25° , 1° grid</td>
@@ -369,14 +379,14 @@ toplankton</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Net Primary Mole Pr oductivity of Carbon by D iazotrophs</td>
+<td>Net Primary Mole Productivity of Carbon by Diazotrophs</td>
 <td><strong>intp pdiaz</strong></td>
 <td>mol m-2 s-1</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Net Primary Mole Pr oductivity of Carbon by Pico phy toplankton</td>
+<td>Net Primary Mole Productivity of Carbon by Picophytoplankton</td>
 <td><strong>intp ppico</strong></td>
 <td>mol m-2 s-1</td>
 <td>0.25° , 1° grid</td>
@@ -384,9 +394,7 @@ toplankton</td>
 </tr>
 <tr class="odd">
 <td>Maximum Ocean Mixed Layer Thickness Defined by Sigma T</td>
-<td><ul>
-<li>*mlotst</li>
-</ul>
+<td><p>*mlotst</p>
 <p>-0125**</p></td>
 <td><p>m</p>
 <p>m</p></td>
@@ -394,7 +402,7 @@ toplankton</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Dissolved Oxygen Con centration</td>
+<td>Dissolved Oxygen Concentration</td>
 <td><p><strong>o2,</strong></p>
 <p><strong>o 2-bot</strong></p>
 <p><strong>o2 -surf</strong></p></td>
@@ -407,7 +415,7 @@ toplankton</td>
 <tr class="odd">
 <td>pH</td>
 <td><p><strong>ph</strong></p>
-<p><strong>p h-bot</strong></p>
+<p><strong>ph-bot</strong></p>
 <p><strong>ph -surf</strong></p></td>
 <td><p>1</p>
 <p>1</p>
@@ -416,12 +424,8 @@ toplankton</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Phy toplankton Carbon Con centration</td>
-<td><ul>
-<li><br />
-</li>
-</ul>
-<p>*phyc**</p>
+<td>Phytoplankton Carbon Concentration</td>
+<td><p>*phyc**</p>
 <p><strong>phyc -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
@@ -429,8 +433,8 @@ toplankton</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Mole Con centration of Diatoms expressed as Carbon in sea water</td>
-<td><p><strong>ph ydiat</strong></p>
+<td>Mole Concentration of Diatoms expressed as Carbon in sea water</td>
+<td><p><strong>phydiat</strong></p>
 <p><strong>phydiat -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
@@ -438,9 +442,9 @@ toplankton</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Mole Con centration of D iazotrophs Expressed as Carbon in Sea
+<td>Mole Concentration of Diazotrophs Expressed as Carbon in Sea
 Water</td>
-<td><p><strong>ph ydiaz</strong></p>
+<td><p><strong>phydiaz</strong></p>
 <p><strong>phydiaz -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
@@ -448,9 +452,9 @@ Water</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Mole Con centration of Pico phy toplankton Expressed as Carbon in
-Sea Water</td>
-<td><p><strong>ph ypico</strong></p>
+<td>Mole Concentration of Picophytoplankton Expressed as Carbon in Sea
+Water</td>
+<td><p><strong>phypico</strong></p>
 <p><strong>phypico -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
@@ -460,7 +464,7 @@ Sea Water</td>
 <tr class="even">
 <td>Sea Water Salinity</td>
 <td><p><strong>so</strong></p>
-<p><strong>s o-bot</strong></p>
+<p><strong>so-bot</strong></p>
 <p><strong>so -surf</strong></p></td>
 <td><p>‰</p>
 <p>‰<br />
@@ -469,28 +473,28 @@ Sea Water</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Sea Water Potential T emperature</td>
-<td><strong>t hetao</strong></td>
+<td>Sea Water Potential Temperature</td>
+<td><strong>thetao</strong></td>
 <td>°C</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
 <td>Ocean Model Cell Thickness</td>
-<td><strong>thk cello</strong></td>
+<td><strong>thkcello</strong></td>
 <td>m</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Sea Water Potential T emperature at Sea Floor</td>
+<td>Sea Water Potential Temperature at Sea Floor</td>
 <td><strong>tob</strong></td>
 <td>°C</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Sea Surface T emperature</td>
+<td>Sea Surface Temperature</td>
 <td><strong>tos</strong></td>
 <td>°C</td>
 <td>0.25° , 1° grid</td>
@@ -511,7 +515,7 @@ Sea Water</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Mole Con centration of Me soz ooplankton expressed as Carbon in sea
+<td>Mole Concentration of Mesozooplankton expressed as Carbon in sea
 water</td>
 <td><p><strong>zmeso</strong></p>
 <p><strong>zmeso -vint</strong></p></td>
@@ -521,12 +525,10 @@ water</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Mole Con centration of Mic roz ooplankton expressed as Carbon in sea
+<td>Mole Concentration of Microzooplankton expressed as Carbon in sea
 water</td>
 <td><p><strong>z micro</strong></p>
-<ul>
-<li>*zmicro</li>
-</ul>
+<p>*zmicro</p>
 <p>-vint**</p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
@@ -534,12 +536,8 @@ water</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Z ooplankton Carbon Con centration</td>
-<td><ul>
-<li><br />
-</li>
-</ul>
-<p>*zooc**</p>
+<td>Zooplankton Carbon Concentration</td>
+<td><p>*zooc**</p>
 <p><strong>zooc -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
@@ -548,14 +546,14 @@ water</td>
 </tr>
 <tr class="even">
 <td>Net Downward Shortwave Radiation at Sea Water Surface</td>
-<td><strong>r sntds</strong></td>
+<td><strong>rsntds</strong></td>
 <td>W m-2</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
 <td>Sea Ice Area Fraction</td>
-<td><strong>s iconc</strong></td>
+<td><strong>siconc</strong></td>
 <td>%</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
@@ -603,20 +601,18 @@ provided here: <https://github.com/Fish-MIP/FishMIP_extracting-data>
 
 ##### Table 7: Fishing effort forcing files and variables for FishMIP 3b simulations.
 
-##### Table 7: Fishing effort forcing files and variables for FishMIP 3b simulations.
-
 <table style="width:99%;">
 <colgroup>
+<col style="width: 11%" />
+<col style="width: 69%" />
 <col style="width: 12%" />
-<col style="width: 67%" />
-<col style="width: 12%" />
-<col style="width: 7%" />
+<col style="width: 5%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Specifier</th>
 <th>Included variables (short names) and definitions</th>
-<th>Time pe riod /Resolution</th>
+<th>Time period /Resolution</th>
 <th>Filename</th>
 </tr>
 </thead>
@@ -675,13 +671,13 @@ fishing effort</td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>H istorical P opulation</td>
+<td>Historical Population</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>H istorical GDP</td>
+<td>Historical GDP</td>
 <td></td>
 <td></td>
 <td></td>
@@ -693,19 +689,19 @@ fishing effort</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>SSP1 P opulation</td>
+<td>SSP1 Population</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>SSP1 GDP</td>
+<td>SSP1GDP</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>SSP5 P opulation</td>
+<td>SSP5P opulation</td>
 <td></td>
 <td></td>
 <td></td>
@@ -721,23 +717,23 @@ fishing effort</td>
 
 ##### Table 8: Metadata for histsoc fishing effort variables.
 
-| Va riable Name      | Long name                                                                                     | Unit             | Description/notes                                                                                                                                                                                                                                                                                          |
-|:--------------------|:----------------------------------------------------------------------------------------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Year                | (End of the) year when the f ishing effort is occ urring                                      | Number code      |                                                                                                                                                                                                                                                                                                            |
-| Sector              | The f ishing sector d efined by the law of the c ountry                                       | Name code        | I = Industrial and A = artisanal, where artisanal include powered and unpowered artisanal fleets                                                                                                                                                                                                           |
-| LME                 | Large Marine Eco system Number                                                                | Number code      | A number code of the Large Marine ecosystem in which the Effort is occurring                                                                                                                                                                                                                               |
-| eez\_ countr y_name | Exc lusive Ec onomic Zone                                                                     | Name code        | The country-level exclusive economic zone (or high seas) name in which fishing effort is occurring                                                                                                                                                                                                         |
-| SAUP                | A number code for the f ishing co untry, fol lowing Sea Around Us num bering                  | Number code      | Ex supranational entities (USSR, Yugoslavia) are disaggregated to their constituent countries. Serbian Fishing Effort included with Montenegro. Crimea included with Ukrainian.                                                                                                                            |
-| Gear                | The f ishing gear                                                                             | Name code        | Gear names                                                                                                                                                                                                                                                                                                 |
-| FGroup              | The ta rgeted func tional group                                                               | Name code        | Functional groups are in accordance with those used by the Sea Around Us Project                                                                                                                                                                                                                           |
-| Nom Active          | N ominal f ishing effort (i.e., not inc luding the t echnol ogical creep) of the active fleet | Days at sea X kW | NomActive (of the active fleet; i.e., total) = P (engine power of active the fleet; i.e., total) x DAS (average days at sea of one vessel). Average DAS for one vessel \~ 200 DAS/year. NomActive corresponds to the total (reported, IUU, discards) catch. To find NomActive in DAS do (NomActive/P) X NV |
+| Variable Name       | Long name                                                                                | Unit             | Description/notes                                                                                                                                                                                                                                                                                          |
+|:--------------------|:-----------------------------------------------------------------------------------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Year                | (End of the) year when the fishing effort is occurring                                   | Number code      |                                                                                                                                                                                                                                                                                                            |
+| Sector              | The fishing sector defined by the law of the country                                     | Name code        | I = Industrial and A = artisanal, where artisanal include powered and unpowered artisanal fleets                                                                                                                                                                                                           |
+| LME                 | Large Marine Eco system Number                                                           | Number code      | A number code of the Large Marine ecosystem in which the Effort is occurring                                                                                                                                                                                                                               |
+| eez\_ countr y_name | Exclusive Economic Zone                                                                  | Name code        | The country-level exclusive economic zone (or high seas) name in which fishing effort is occurring                                                                                                                                                                                                         |
+| SAUP                | A number code for the fishing country, fol lowing Sea Around Us numbering                | Number code      | Ex supranational entities (USSR, Yugoslavia) are disaggregated to their constituent countries. Serbian Fishing Effort included with Montenegro. Crimea included with Ukrainian.                                                                                                                            |
+| Gear                | The fishing gear                                                                         | Name code        | Gear names                                                                                                                                                                                                                                                                                                 |
+| FGroup              | The targeted functional group                                                            | Name code        | Functional groups are in accordance with those used by the Sea Around Us Project                                                                                                                                                                                                                           |
+| Nom Active          | Nominal fishing effort (i.e., not including the technological creep) of the active fleet | Days at sea X kW | NomActive (of the active fleet; i.e., total) = P (engine power of active the fleet; i.e., total) x DAS (average days at sea of one vessel). Average DAS for one vessel \~ 200 DAS/year. NomActive corresponds to the total (reported, IUU, discards) catch. To find NomActive in DAS do (NomActive/P) X NV |
 
-##### Table 9: Details for OSP relative change in drivers of fishing effort variables.
+##### Table 9: Details for OSP relative change in drivers of fishing effort variables. HOW TO DESCRIBE HOW WE WILL VARY MANAGEMENT IN THE MODELS ACROSS OSPs??
 
-| OSP  | Variable | Change relative to 2015 |
-|------|----------|-------------------------|
-| OSP1 | ????     | ????                    |
-| OSP2 | ????     | ????                    |
+| OSP  | Management                                 |
+|------|--------------------------------------------|
+| OSP1 | All stocks fished at Fmsy or B/B0 \> 0.5?? |
+| OSP5 | Fmsy or B/B0??                             |
 
 #### Implementation of OSPs
 
