@@ -259,6 +259,56 @@ to each SSP, e.g. SSP1RCP2.6 would use OSP1)</p></td>
 </tbody>
 </table>
 
+#### Additional policy-experiment runs
+
+The above runs will allow us to provide IPCC advice regarding key risks
+under climate change. We will add additional runs later in the timeline.
+
+<table style="width:99%;">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 36%" />
+<col style="width: 36%" />
+<col style="width: 13%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>No.</th>
+<th>Simulation</th>
+<th>Short description</th>
+<th>Time period and specifiers</th>
+<th>Phase</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>SSPs2-RCP4.5 with climate change and OSP2 fishing, but
+&lt;NO MANAGEMENT&gt;</strong></td>
+<td><p><strong>Climate</strong>: SSP-RCP climate scenario,
+(e.g. SSP1RCP2.6, SSP5RCP8.5)</p>
+<p><strong>Fishing</strong>: OSP2- future fisheries dynamics but with
+MANAGEMENT switched off</p></td>
+<td><p>historical</p>
+<p>OSP2soc</p></td>
+<td>3, optional</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>SSPs2-RCP4.5 with climate change and OSP2 fishing, but
+&lt;NO MPAS&gt;</strong></td>
+<td><p><strong>Climate</strong>: SSP-RCP climate scenario,
+(e.g. SSP1RCP2.6, SSP5RCP8.5)</p>
+<p><strong>Fishing</strong>: OSP2- future fisheries dynamics but with
+MPAs switched off</p></td>
+<td><p>historical</p>
+<p>OSP2soc</p></td>
+<td>3, optional</td>
+</tr>
+</tbody>
+</table>
+
 #### Scenario definitions
 
 Throughout the protocol we use ‘specifiers’ that are shortened names
@@ -709,6 +759,12 @@ fishing effort</td>
 <tr class="odd">
 <td>SSP5 GDP</td>
 <td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>MPAs</td>
+<td>NEED TO MAKE THIS (Kelsey , Derek)</td>
 <td></td>
 <td></td>
 </tr>
