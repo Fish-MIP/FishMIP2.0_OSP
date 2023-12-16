@@ -26,9 +26,9 @@ output: github_document
 
 ## Goal {#goal}
 
-The goal of FishMIP's "Fish Futures" Protocol is to assess adaptation pathways to climate change under different societal and fisheries management development pathways. This simulation round extends our previous CMIP6 climate impact projections to include past and future fisheries development to enable us to identify key risks and adaptation to climate change including consequences for biodiversity, fisheries and food security.
+The goal of FishMIP's "Fish Futures" Protocol is to assess adaptation pathways to climate change under different societal and fisheries management development scenarios. This simulation round extends our previous CMIP6 climate impact projections to include past and future fisheries development to enable us to identify key risks and explore adaptation to climate change including consequences for biodiversity, fisheries and food security.
 
-The future scenarios we are using have been developed to be consistent with each of the [Shared Socioeconomic Pathways](https://www.climateforesight.eu/seeds/shared-socioeconomic-pathways/), but with explicit additional details needed for fisheries and aquaculture development, are called Ocean System Pathways (OSPs) (Maury et al. 2023 - TO BE SUBMITTED).
+The future scenarios we are using have been developed to complement and be consistent with the [Shared Socioeconomic Pathways](https://www.climateforesight.eu/seeds/shared-socioeconomic-pathways/), but with socioeconomic drivers needed for fisheries and aquaculture. These are labelled Ocean System Pathways (OSPs) (Maury et al. 2023 - TO BE SUBMITTED).
 
 This protocol provides details on the experimental set-up and data forcings required to run each of these scenarios, with and without climate change.
 
@@ -126,13 +126,13 @@ Each model experiment is a set of model simulations that has a particular goal (
 |       |                                                                           |                                                                                                     |                             |                           |
 |       |                                                                           |                                                                                                     | OSP1soc                     |                           |
 +-------+---------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------+---------------------------+
-| 6-10  | **All SSPs with climate change (SSP1RCP2.6, SSP5RCP8.5) , no fishing**    | **Climate**: SSP-RCP climate scenarios (e.g. SSP1RCP2.6, SSP5RCP8.5)                                | 2015-2100                   | 1 (optional re-runs only) |
+| 6-10  | **All SSPs with climate change (SSP1-2.6, SSP5-8.5) , no fishing**    | **Climate**: SSP-RCP climate scenarios (e.g. SSP1-2.6, SSP5-8.5)                                | 2015-2100                   | 1 (optional re-runs only) |
 |       |                                                                           |                                                                                                     |                             |                           |
 |       |                                                                           | **Fishing**: No fishing                                                                             | ssp\<scen\>                 |                           |
 |       |                                                                           |                                                                                                     |                             |                           |
 |       |                                                                           |                                                                                                     | nat                         |                           |
 +-------+---------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------+---------------------------+
-| 11-15 | **All SSPs with climate change (SSP1RCP2.6, SSP5RCP8.5) and OSP fishing** | **Climate**: SSP-RCP climate scenario, (e.g. SSP1RCP2.6, SSP5RCP8.5)                                | historical                  | 2 priority                |
+| 11-15 | **All SSPs with climate change (SSP1-2.6, SSP5-8.5) and OSP fishing** | **Climate**: SSP-RCP climate scenario, (e.g. SSP1-2.6, SSP5-8.5)                                | historical                  | 2 priority                |
 |       |                                                                           |                                                                                                     |                             |                           |
 |       |                                                                           | **Fishing**: OSP1-5 future fisheries dynamics (matched to each SSP, e.g. SSP1RCP2.6 would use OSP1) | OSP\<x\>soc                 |                           |
 +-------+---------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------+---------------------------+
@@ -144,11 +144,11 @@ The above runs will allow us to provide IPCC advice regarding key risks under cl
 +------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-----------------------------+-------------+
 | No.        | Simulation                                                                    | Short description                                                             | Time period and specifiers  | Phase       |
 +============+===============================================================================+===============================================================================+=============================+=============+
-| 1          | **SSPs2-RCP4.5 with climate change and OSP2 fishing, but \<NO MANAGEMENT\>**  | **Climate**: SSP-RCP climate scenario, (e.g. SSP1RCP2.6, SSP5RCP8.5)          | historical                  | 3, optional |
+| 1          | **SSP2-4.5 with climate change and OSP2 fishing, but \<NO MANAGEMENT\>**  | **Climate**: SSP-RCP climate scenario, (e.g. SSP1-2.6, SSP5-8.5)          | historical                  | 3, optional |
 |            |                                                                               |                                                                               |                             |             |
 |            |                                                                               | **Fishing**: OSP2- future fisheries dynamics but with MANAGEMENT switched off | OSP2soc                     |             |
-+------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-----------------------------+-------------+
-|            | **SSPs2-RCP4.5 with climate change and OSP2 fishing, but \<NO MPAS\>**        | **Climate**: SSP-RCP climate scenario, (e.g. SSP1RCP2.6, SSP5RCP8.5)          | historical                  | 3, optional |
++------------+-------------------------------------------------------------------------------+------------------------------------------------------------------------------+-----------------------------+-------------+
+|            | **SSP2-RCP4.5 with climate change and OSP2 fishing, but \<NO MPAS\>**        | **Climate**: SSP-RCP climate scenario, (e.g. SSP1-2.6, SSP5-8.5)          | historical                  | 3, optional |
 |            |                                                                               |                                                                               |                             |             |
 |            |                                                                               | **Fishing**: OSP2- future fisheries dynamics but with MPAs switched off       | OSP2soc                     |             |
 +------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-----------------------------+-------------+
@@ -170,11 +170,11 @@ The above runs will allow us to provide IPCC advice regarding key risks under cl
 +------------------------+-----------------------------------------------------------------------+
 | historical             | Historical climate as simulated by the ESMs, starting in 1950.        |
 +------------------------+-----------------------------------------------------------------------+
-| ssp126                 | SSP1-RCP2.6 climate as simulated by the ESMs                          |
+| ssp126                 | SSP1-2.6 climate as simulated by the ESMs                          |
 +------------------------+-----------------------------------------------------------------------+
-| ssp585                 | SSP5-RCP8.5 climate as simulated by the ESMs.                         |
+| ssp245                 | SSP2-4.5 climate as simulated by the ESMs.                         |
 +------------------------+-----------------------------------------------------------------------+
-| sspXXX                 | ANY OTHERS?                                                           |
+| ssp585                 | SSP5-8.5 climate as simulated by the ESMs.                                                         |
 +------------------------+-----------------------------------------------------------------------+
 
 ##### Table 4: Socio-economic scenario specifiers (soc-scenario).
@@ -234,7 +234,7 @@ The above runs will allow us to provide IPCC advice regarding key risks under cl
 +--------------------------------------------------------------------------+-------------------+-------------+-----------------+--------------+
 | Maximum Ocean Mixed Layer Thickness Defined by Sigma T                   | \*mlotst          | m           | 0.25° , 1° grid | GFDL, IPSL   |
 |                                                                          |                   |             |                 |              |
-|                                                                          | -0125\*\*         | m           |                 |              |
+|                                                                          | -0125\*\*         |             |                 |              |
 +--------------------------------------------------------------------------+-------------------+-------------+-----------------+--------------+
 | Dissolved Oxygen Concentration                                           | **o2,**           | mol m-3     | 0.25° , 1° grid | GFDL, IPSL   |
 |                                                                          |                   |             |                 |              |
@@ -266,9 +266,9 @@ The above runs will allow us to provide IPCC advice regarding key risks under cl
 +--------------------------------------------------------------------------+-------------------+-------------+-----------------+--------------+
 | Sea Water Salinity                                                       | **so**            | ‰           | 0.25° , 1° grid | GFDL, IPSL   |
 |                                                                          |                   |             |                 |              |
-|                                                                          | **so-bot**        | ‰\          |                 |              |
-|                                                                          |                   | ‰           |                 |              |
-|                                                                          | **so -surf**      |             |                 |              |
+|                                                                          | **so-bot**        | ‰           |                 |              |
+|                                                                          |                   |            |                 |              |
+|                                                                          | **so -surf**      | %           |                 |              |
 +--------------------------------------------------------------------------+-------------------+-------------+-----------------+--------------+
 | Sea Water Potential Temperature                                          | **thetao**        | °C          | 0.25° , 1° grid | GFDL, IPSL   |
 +--------------------------------------------------------------------------+-------------------+-------------+-----------------+--------------+
