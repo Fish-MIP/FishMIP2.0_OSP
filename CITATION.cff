@@ -10,5 +10,7 @@ authors:
  - family-names: "Coordinators"
   given-names: "FishMIP/ISIMIP" 
 title: "FishMIP-ISIMIP 3b Group III"
-year: 2022
+year: 2023
+version: 1.0.0
+url: "https://github.com/Fish-MIP/FishMIP_2023_3b_Protocol"
   
