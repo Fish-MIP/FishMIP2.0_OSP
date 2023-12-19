@@ -1,16 +1,20 @@
-cff-version: 1.0.0
-message: "If you use this protocol, please cite it as below."
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
 authors:
 - family-names: "Maury"
   given-names: "Olivier"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
 - family-names: "Blanchard"
   given-names: "Julia"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
 - family-names: "Tittensor"
   given-names: "Derek"
- - family-names: "Coordinators"
-  given-names: "FishMIP/ISIMIP" 
-title: "FishMIP-ISIMIP 3b Group III"
-year: 2023
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: ""
+  given-names: "FishMIP"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "FishMIP_2023_3b_Protocol"
 version: 1.0.0
+doi:
+date-released: 2023-12-19
 url: "https://github.com/Fish-MIP/FishMIP_2023_3b_Protocol"
-  
