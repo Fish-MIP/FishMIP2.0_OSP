@@ -1,0 +1,14 @@
+cff-version: 1.0.0
+message: "If you use this protocol, please cite it as below."
+authors:
+- family-names: "Maury"
+  given-names: "Olivier"
+- family-names: "Blanchard"
+  given-names: "Julia"
+- family-names: "Tittensor"
+  given-names: "Derek"
+ - family-names: "Coordinators"
+  given-names: "FishMIP/ISIMIP" 
+title: "FishMIP-ISIMIP 3b Group III"
+year: 2022
+  
