@@ -100,7 +100,9 @@ setting for forcing drivers that describes how each model run should be
 set up in the experiment, including both the type of climate forcing
 (CF) and the type of direct human forcing (DHF).
 
-The OSP protocol is grouped into three simulation model experiments:
+The OSP protocol is grouped into three simulation model experiments. The
+below text is taken from [Maury et al.
+2024.](https://essopenarchive.org/users/713515/articles/937359-the-ocean-system-pathways-osps-a-new-scenario-and-simulation-framework-to-investigate-the-future-of-the-world-fisheries)
 
 **A. OSP-baseline:** This is designed to initialise and evaluate the
 MEM-PIM simulation framework against available data. It also seeks to
@@ -232,7 +234,7 @@ setup of this set of simulations has not yet been fully determined, it
 would involve running:
 
 ●	The OSP1 scenario (2023-2100) with fishing, management transitioning to
-50%of the ocean in fully protected MPAs, and moderate climate change
+50% of the ocean in fully protected MPAs, and moderate climate change
 (SSP1-2.6). This simulation corresponds to the IPBES NFF \"Nature for
 Nature\" pathway.
 
@@ -251,11 +253,11 @@ performances of the three NFF strategies, in terms of food supply,
 biodiversity conservation, employment and economic benefits generated in
 the context of the OSP1 mild climate change. 
 
-##### Table 1: Control run and historical simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
+##### Table 1: OSP-Baseline simulations. Control run and historical simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
 
 +-----------+-----------+--------------------+-----------+-----------+
-| No.       | E         | Short description  | Time      | Phase     |
-|           | xperiment |                    | period    |           |
+| No.       | S         | Short description  | Time      | Phase     |
+|           | imulation |                    | period    |           |
 |           |           |                    | and       |           |
 |           |           |                    | s         |           |
 |           |           |                    | pecifiers |           |
@@ -329,7 +331,7 @@ the context of the OSP1 mild climate change. 
 | For the 'no fishing' runs (nat), the spin-up should not use any fishing effort.
 | 
 
-##### Table 2: Future scenarios simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
+##### Table 2: OSP-Future simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
 
 +----------+--------------+---------------------+----------+----------+
 | No.      | Simulation   | Short description   | Time     | Phase    |
@@ -368,10 +370,12 @@ the context of the OSP1 mild climate change. 
 |          |              | use OSP1)           |          |          |
 +----------+--------------+---------------------+----------+----------+
 
-#### Additional policy experimental sensitivity tests: REMOVE BELOW FOR NOW?
+#### Additional policy experimental sensitivity tests under threads C and D will be updated in due course.
 
 The above runs will allow us to provide IPCC advice regarding key risks
 under climate change. We will add additional runs later in the timeline.
+
+##### Table 2: OSP-policy simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
 
 +---------+------------------+------------------+---------+---------+
 | No.     | Simulation       | Short            | Time    | Phase   |
@@ -1283,7 +1287,7 @@ technological creep, and model calibration.
 Please provide any conversion factors that you have used to convert
 units.
 
-### **Thank you for your contributions to FishMIP and ISI-MIP!**
+### **Thank you for your contributions to FishMIP and ISIMIP!**
 
 FishMIP is entirely community-driven, and we appreciate the effort of
 all involved.
