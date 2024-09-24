@@ -134,10 +134,9 @@ pi-control climate forcing, is required.
         reconstructed and observed GDP and population.
 
 -   A 1958-2022 **Realistic-baseline** simulation with the
-    reanalysis-driven \'realistic\'
-    climate forcing and fishing with 1958-2022 OSP drivers based on
-    observed GDP and population. This simulation branches off from the
-    Historical-after 1957. 
+    reanalysis-driven 'realistic' climate forcing and fishing with
+    1958-2022 OSP drivers based on observed GDP and population. This
+    simulation branches off from the Historical-after 1957. 
 
 The Realistic-baseline simulation will be used to evaluate the
 simulation framework against fishery catches (FAO, 2020, 2024a),
@@ -163,25 +162,25 @@ between the Historical-a and the Historical-c simulations will allow the
 identification of climate change impacts on the coupled
 social-ecological fishery system. 
 
-**B.	OSP-future**: This second thread is dedicated to carrying out
+**B. OSP-future**: This second thread is dedicated to carrying out
 scenario simulations from the perspective of the IPCC. The aim is to
 estimate the impact of climate change and the socio-economic context on
 marine ecosystems, fisheries and the benefits they provide to societies
 worldwide. It contributes to ISIMIP3b, which focuses on assessing the
 climate change impacts, and involves running:
 
-●	Scenario-a: The five OSP scenarios (2015-2100) with fishing and SSP
+● Scenario-a: The five OSP scenarios (2015-2100) with fishing and SSP
 climate change, starting from the Historical-a simulation. This
 simulation is designed to simulate the impacts of climate change on
 fishery and food consumption in the different socio-economic OSP
 contexts.
 
-●	Scenario-b: The five OSP scenarios (2015-2100) without fishing but with
-SSP climate change, starting from the Historical-b simulation. This
+● Scenario-b: The five OSP scenarios (2015-2100) without fishing but
+with SSP climate change, starting from the Historical-b simulation. This
 simulation is designed to simulate the impacts of different levels of
 future climate change on marine ecosystems.
 
-●	Scenario-c: The five OSP scenarios (2015-2100) with fishing but no
+● Scenario-c: The five OSP scenarios (2015-2100) with fishing but no
 climate change (pi-control climate), starting from the Historical-c
 simulation. This simulation is designed to highlight the effects of the
 various socio-economic OSP contexts on fisheries.
@@ -207,15 +206,15 @@ difference between the Scenario-a and the Scenario-c simulations will
 allow the identification of climate change impacts on the coupled
 social-ecological fishery system. 
 
-**C.	OSP-management & food security:** This third thread is devoted to
+**C. OSP-management & food security:** This third thread is devoted to
 scenario simulations from the FAO perspective. It aims to focus on the
-effects of fishery management on food security, in the \"conventional
-trends\" context of OSP2. It involves running:
+effects of fishery management on food security, in the "conventional
+trends" context of OSP2. It involves running:
 
-●	The OSP2 scenario (2023-2100) with fishing, no management, and climate
+● The OSP2 scenario (2023-2100) with fishing, no management, and climate
 change (RCP4.5).
 
-●	The OSP2 scenario (2023-2100) with fishing, fully compliant MSY
+● The OSP2 scenario (2023-2100) with fishing, fully compliant MSY
 management, and climate change (RCP4.5).
 
 Comparing these two simulations with the OSP2 Scenario-a simulation
@@ -223,30 +222,30 @@ Comparing these two simulations with the OSP2 Scenario-a simulation
 fishery management failure and the potential gains of fully compliant
 MSY management on global food security.  
 
-**D.	OSP-Nature Future Framework:** This fourth thread is dedicated to
+**D. OSP-Nature Future Framework:** This fourth thread is dedicated to
 mapping the OSP scenario simulations to the IPBES perspective and the
 NFF. The aim here is to compare three ways of envisioning the
-\"Sustainability First\" OSP1 scenario, corresponding to the three
-perspectives on Nature of the \"Nature Futures Framework\" from the
-IPBES (\"Nature for Nature\", \"Nature as Culture\", and \"Nature for
-Society\", Pereira et al., 2020; Kim et al., 2023). While the definitive
-setup of this set of simulations has not yet been fully determined, it
-would involve running:
+"Sustainability First" OSP1 scenario, corresponding to the three
+perspectives on Nature of the "Nature Futures Framework" from the IPBES
+("Nature for Nature", "Nature as Culture", and "Nature for Society",
+Pereira et al., 2020; Kim et al., 2023). While the definitive setup of
+this set of simulations has not yet been fully determined, it would
+involve running:
 
-●	The OSP1 scenario (2023-2100) with fishing, management transitioning to
-50% of the ocean in fully protected MPAs, and moderate climate change
-(SSP1-2.6). This simulation corresponds to the IPBES NFF \"Nature for
-Nature\" pathway.
+● The OSP1 scenario (2023-2100) with fishing, management transitioning
+to 50% of the ocean in fully protected MPAs, and moderate climate change
+(SSP1-2.6). This simulation corresponds to the IPBES NFF "Nature for
+Nature" pathway.
 
-●	The OSP1 scenario (2023-2100) with fishing, artisanal fisheries managed
-at MSY and no industrial fisheries, and moderate climate change
-(SSP1-2.6). This simulation corresponds to the IPBES NFF \"Nature as
-Culture\" pathway.
+● The OSP1 scenario (2023-2100) with fishing, artisanal fisheries
+managed at MSY and no industrial fisheries, and moderate climate change
+(SSP1-2.6). This simulation corresponds to the IPBES NFF "Nature as
+Culture" pathway.
 
-●	The OSP1 scenario (2023-2100) with fishing, the management of both
+● The OSP1 scenario (2023-2100) with fishing, the management of both
 artisanal and industrial fisheries at Maximum Economic Yield (MEY), and
 moderate climate change (SSP1-2.6). This simulation corresponds to the
-IPBES NFF \"Nature for Society\" pathway.
+IPBES NFF "Nature for Society" pathway.
 
 Comparing these three simulations will bring insights into the
 performances of the three NFF strategies, in terms of food supply,
@@ -255,74 +254,89 @@ the context of the OSP1 mild climate change. 
 
 ##### Table 1: OSP-Baseline simulations. Control run and historical simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
 
-+-----------+-----------+--------------------+-----------+-----------+
-| No.       | S         | Short description  | Time      | Phase     |
-|           | imulation |                    | period    |           |
-|           |           |                    | and       |           |
-|           |           |                    | s         |           |
-|           |           |                    | pecifiers |           |
-+===========+===========+====================+===========+===========+
-| 1         | **Pre-i   | **Climate**: No    | 1850-2100 | 1         |
-|           | ndustrial | climate change,    |           | (optional |
-|           | control** | fixed 1850s        | picontrol | re-runs   |
-|           |           | CO~`2`~ levels     |           | only)     |
-|           |           |                    | nat       |           |
-|           |           | **Fishing**: No    |           |           |
-|           |           | fishing            |           |           |
-+-----------+-----------+--------------------+-----------+-----------+
-| 2         | **H       | **Climate**: No    | 1850-2014 | 1         |
-|           | istorical | climate change,    |           | (optional |
-|           | fishing   | fixed 1850s        | picontrol | re-runs   |
-|           | effort,   | CO~`2`~ levels     |           | only)     |
-|           | no        |                    | histsoc   |           |
-|           | climate** | **Fishing**:       |           |           |
-|           |           | Historical fishing |           |           |
-|           |           | effort, forced     |           |           |
-|           |           | directly by effort |           |           |
-|           |           | data               |           |           |
-+-----------+-----------+--------------------+-----------+-----------+
-| 3         | **H       | **Climate**: No    | 1850-2014 | 2         |
-|           | istorical | climate change,    |           | (         |
-|           | fishing   | fixed 1850s        | picontrol | priority) |
-|           | dynamics, | CO~`2`~ levels     |           |           |
-|           | no        |                    | h         |           |
-|           | climate** | **Fishing**:       | istsocOSP |           |
-|           |           | Historical fishing |           |           |
-|           |           | dynamics, forced   |           |           |
-|           |           | by OSP drivers     |           |           |
-+-----------+-----------+--------------------+-----------+-----------+
-| 4         | **H       | **Climate**:       | 1850-2014 | 1         |
-|           | istorical | Simulat            |           | (optional |
-|           | climate   | ed**/reanalysis?** | reanalyis | re-runs   |
-|           | only**    | historical climate |           | only)     |
-|           |           | change             | nat       |           |
-|           |           |                    |           |           |
-|           |           | **Fishing**: No    |           |           |
-|           |           | fishing            |           |           |
-+-----------+-----------+--------------------+-----------+-----------+
-| 5         | **H       | **Climate**:       | 1850-2014 | 1         |
-|           | istorical | Simulat            |           | (optional |
-|           | climate   | ed**/reanalysis?** | reanalyis | re-runs   |
-|           | and       | historical climate |           | only)     |
-|           | fishing   | change             | histsoc   |           |
-|           | effort**  |                    |           |           |
-|           |           | **Fishing**:       |           |           |
-|           |           | Historical fishing |           |           |
-|           |           | effort, forced     |           |           |
-|           |           | directly by effort |           |           |
-|           |           | data               |           |           |
-+-----------+-----------+--------------------+-----------+-----------+
-| 6         | **H       | **Climate**:       | 1850-2014 | 2         |
-|           | istorical | Simulat            |           | (         |
-|           | climate   | ed**/reanalysis?** | reanalyis | priority) |
-|           | and       | historical climate |           |           |
-|           | fishing   | change             | histOSP   |           |
-|           | d         |                    |           |           |
-|           | ynamics** | **Fishing**:       |           |           |
-|           |           | Historical fishing |           |           |
-|           |           | dynamics, forced   |           |           |
-|           |           | by OSP drivers     |           |           |
-+-----------+-----------+--------------------+-----------+-----------+
++-----+---------------+---------------+---------------+---------------+
+| No. | S imulation   | Short         | Time period   | Phase         |
+|     |               | description   | and s         |               |
+|     |               |               | pecifiers     |               |
++=====+===============+===============+===============+===============+
+| 1   | **Pre-i       | **Climate**:  | 1850-2100     | 1 (optional   |
+|     | ndustrial     | No climate    |               | re-runs only) |
+|     | control**     | change, fixed | picontrol     |               |
+|     |               | 1850s CO~`2`~ |               |               |
+|     |               | levels        | nat           |               |
+|     |               |               |               |               |
+|     |               | **Fishing**:  |               |               |
+|     |               | No fishing    |               |               |
++-----+---------------+---------------+---------------+---------------+
+| 2   | **H istorical | **Climate**:  | 1850-2014     | 1 (optional   |
+|     | fishing       | No climate    |               | re-runs only) |
+|     | effort, no    | change, fixed | picontrol     |               |
+|     | climate**     | 1850s CO~`2`~ |               |               |
+|     |               | levels        | histsoc       |               |
+|     |               |               |               |               |
+|     |               | **Fishing**:  |               |               |
+|     |               | Historical    |               |               |
+|     |               | fishing       |               |               |
+|     |               | effort,       |               |               |
+|     |               | forced        |               |               |
+|     |               | directly by   |               |               |
+|     |               | effort data   |               |               |
++-----+---------------+---------------+---------------+---------------+
+| 3   | **H istorical | **Climate**:  | 1850-2014     | 2 ( priority) |
+|     | fishing       | No climate    |               |               |
+|     | dynamics, no  | change, fixed | picontrol     |               |
+|     | climate**     | 1850s CO~`2`~ |               |               |
+|     |               | levels        | h istsocOSP   |               |
+|     |               |               |               |               |
+|     |               | **Fishing**:  |               |               |
+|     |               | Historical    |               |               |
+|     |               | fishing       |               |               |
+|     |               | dynamics,     |               |               |
+|     |               | forced by OSP |               |               |
+|     |               | drivers       |               |               |
++-----+---------------+---------------+---------------+---------------+
+| 4   | **H istorical | **Climate**:  | 1850-2014     | 1 (optional   |
+|     | climate       | Simulat       |               | re-runs only) |
+|     | only**        | ed**/         | reanalyis     |               |
+|     |               | reanalysis?** |               |               |
+|     |               | historical    | nat           |               |
+|     |               | climate       |               |               |
+|     |               | change        |               |               |
+|     |               |               |               |               |
+|     |               | **Fishing**:  |               |               |
+|     |               | No fishing    |               |               |
++-----+---------------+---------------+---------------+---------------+
+| 5   | **H istorical | **Climate**:  | 1850-2014     | 1 (optional   |
+|     | climate and   | Simulat       |               | re-runs only) |
+|     | fishing       | ed**/         | reanalyis     |               |
+|     | effort**      | reanalysis?** |               |               |
+|     |               | historical    | histsoc       |               |
+|     |               | climate       |               |               |
+|     |               | change        |               |               |
+|     |               |               |               |               |
+|     |               | **Fishing**:  |               |               |
+|     |               | Historical    |               |               |
+|     |               | fishing       |               |               |
+|     |               | effort,       |               |               |
+|     |               | forced        |               |               |
+|     |               | directly by   |               |               |
+|     |               | effort data   |               |               |
++-----+---------------+---------------+---------------+---------------+
+| 6   | **H istorical | **Climate**:  | 1850-2014     | 2 ( priority) |
+|     | climate and   | Simulat       |               |               |
+|     | fishing d     | ed**/         | reanalyis     |               |
+|     | ynamics**     | reanalysis?** |               |               |
+|     |               | historical    | histOSP       |               |
+|     |               | climate       |               |               |
+|     |               | change        |               |               |
+|     |               |               |               |               |
+|     |               | **Fishing**:  |               |               |
+|     |               | Historical    |               |               |
+|     |               | fishing       |               |               |
+|     |               | dynamics,     |               |               |
+|     |               | forced by OSP |               |               |
+|     |               | drivers       |               |               |
++-----+---------------+---------------+---------------+---------------+
 
 #### Note on spin-up period (pre-1850)
 
@@ -333,42 +347,56 @@ the context of the OSP1 mild climate change. 
 
 ##### Table 2: OSP-Future simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
 
-+----------+--------------+---------------------+----------+----------+
-| No.      | Simulation   | Short description   | Time     | Phase    |
-|          |              |                     | period   |          |
-|          |              |                     | and      |          |
-|          |              |                     | sp       |          |
-|          |              |                     | ecifiers |          |
-+==========+==============+=====================+==========+==========+
-| 1-5      | **All SSPs   | **Climate**: No     | 2        | 2,       |
-|          | (1-5), no    | climate change      | 015-2100 | priority |
-|          | climate      |                     |          |          |
-|          | change,      | **Fishing**: OSP1-5 | p        |          |
-|          | OSP1-5       | future fisheries    | icontrol |          |
-|          | fishing**    | dynamics (following |          |          |
-|          |              | on from historical  | OSP1soc  |          |
-|          |              | OSP)                |          |          |
-+----------+--------------+---------------------+----------+----------+
-| 6-10     | **All SSPs   | **Climate**:        | 2        | 1        |
-|          | with climate | SSP-RCP climate     | 015-2100 | (        |
-|          | change       | scenarios (e.g.     | ssp      | optional |
-|          | (SSP1-2.6,   | SSP1-2.6, SSP5-8.5) | \<scen\> | re-runs  |
-|          | SSP5-8.5) ,  |                     | nat      | only)    |
-|          | no fishing** | **Fishing**: No     |          |          |
-|          | \|           | fishing             |          |          |
-+----------+--------------+---------------------+----------+----------+
-| 11-15    | **All SSPs   | **Climate**:        | 2        | 2        |
-|          | with climate | SSP-RCP climate     | 015-2100 | priority |
-|          | change       | scenario, (e.g.     |          |          |
-|          | (SSP1-2.6,   | SSP1-2.6, SSP5-8.5) | ssp      |          |
-|          | SSP5-8.5)    |                     | \<scen\> |          |
-|          | and OSP      | **Fishing**: OSP1-5 |          |          |
-|          | fishing**    | future fisheries    | OSP      |          |
-|          |              | dynamics (matched   | \<x\>soc |          |
-|          |              | to each SSP, e.g.   |          |          |
-|          |              | SSP1RCP2.6 would    |          |          |
-|          |              | use OSP1)           |          |          |
-+----------+--------------+---------------------+----------+----------+
++-------+--------------+--------------+--------------+--------------+
+| No.   | Simulation   | Short        | Time period  | Phase        |
+|       |              | description  | and sp       |              |
+|       |              |              | ecifiers     |              |
++=======+==============+==============+==============+==============+
+| 1-5   | **All SSPs   | **Climate**: | 2 015-2100   | 2, priority  |
+|       | (1-5), no    | No climate   |              |              |
+|       | climate      | change       | p icontrol   |              |
+|       | change,      |              |              |              |
+|       | OSP1-5       | **Fishing**: | OSP1soc      |              |
+|       | fishing**    | OSP1-5       |              |              |
+|       |              | future       |              |              |
+|       |              | fisheries    |              |              |
+|       |              | dynamics     |              |              |
+|       |              | (following   |              |              |
+|       |              | on from      |              |              |
+|       |              | historical   |              |              |
+|       |              | OSP)         |              |              |
++-------+--------------+--------------+--------------+--------------+
+| 6-10  | **All SSPs   | **Climate**: | 2 015-2100   | 1 ( optional |
+|       | with climate | SSP-RCP      | ssp \<scen\> | re-runs      |
+|       | change       | climate      | nat          | only)        |
+|       | (SSP1-2.6,   | scenarios    |              |              |
+|       | SSP5-8.5) ,  | (e.g.        |              |              |
+|       | no fishing** | SSP1-2.6,    |              |              |
+|       | \|           | SSP5-8.5)    |              |              |
+|       |              |              |              |              |
+|       |              | **Fishing**: |              |              |
+|       |              | No fishing   |              |              |
++-------+--------------+--------------+--------------+--------------+
+| 11-15 | **All SSPs   | **Climate**: | 2 015-2100   | 2 priority   |
+|       | with climate | SSP-RCP      |              |              |
+|       | change       | climate      | ssp \<scen\> |              |
+|       | (SSP1-2.6,   | scenario,    |              |              |
+|       | SSP5-8.5)    | (e.g.        | OSP \<x\>soc |              |
+|       | and OSP      | SSP1-2.6,    |              |              |
+|       | fishing**    | SSP5-8.5)    |              |              |
+|       |              |              |              |              |
+|       |              | **Fishing**: |              |              |
+|       |              | OSP1-5       |              |              |
+|       |              | future       |              |              |
+|       |              | fisheries    |              |              |
+|       |              | dynamics     |              |              |
+|       |              | (matched to  |              |              |
+|       |              | each SSP,    |              |              |
+|       |              | e.g.         |              |              |
+|       |              | SSP1RCP2.6   |              |              |
+|       |              | would use    |              |              |
+|       |              | OSP1)        |              |              |
++-------+--------------+--------------+--------------+--------------+
 
 #### Additional policy experimental sensitivity tests under threads C and D will be updated in due course.
 
@@ -377,36 +405,38 @@ under climate change. We will add additional runs later in the timeline.
 
 ##### Table 2: OSP-policy simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
 
-+---------+------------------+------------------+---------+---------+
-| No.     | Simulation       | Short            | Time    | Phase   |
-|         |                  | description      | period  |         |
-|         |                  |                  | and     |         |
-|         |                  |                  | spe     |         |
-|         |                  |                  | cifiers |         |
-+=========+==================+==================+=========+=========+
-| 1       | **SSP2-4.5 with  | **Climate**:     | 20      | 3,      |
-|         | climate change   | SSP-RCP climate  | 15-2100 | o       |
-|         | and OSP2         | scenario         | ssp245  | ptional |
-|         | fishing, but     |                  |         |         |
-|         | \<NO             | **Fishing**:     | OSP2soc |         |
-|         | MANAGEMENT\>**   | OSP2- future     |         |         |
-|         |                  | fisheries        |         |         |
-|         |                  | dynamics but     |         |         |
-|         |                  | with MANAGEMENT  |         |         |
-|         |                  | switched off     |         |         |
-+---------+------------------+------------------+---------+---------+
-|         | **SSP2-RCP4.5    | **Climate**:     | 20      | 3,      |
-|         | with climate     | SSP-RCP climate  | 15-2100 | o       |
-|         | change and OSP2  | scenario         | ssp245  | ptional |
-|         | fishing, but     | **SSP2-RCP4.5**  |         |         |
-|         | \<NO MPAS\>**    |                  | OSP2soc |         |
-|         |                  | **Fishing**:     | _noMPAS |         |
-|         |                  | OSP2- future     |         |         |
-|         |                  | fisheries        |         |         |
-|         |                  | dynamics but     |         |         |
-|         |                  | with MPAs        |         |         |
-|         |                  | switched off     |         |         |
-+---------+------------------+------------------+---------+---------+
++-----+---------------+---------------+---------------+--------------+
+| No. | Simulation    | Short         | Time period   | Phase        |
+|     |               | description   | and spe       |              |
+|     |               |               | cifiers       |              |
++=====+===============+===============+===============+==============+
+| 1   | **SSP2-4.5    | **Climate**:  | 20 15-2100    | 3, o ptional |
+|     | with climate  | SSP-RCP       | ssp245        |              |
+|     | change and    | climate       |               |              |
+|     | OSP2 fishing, | scenario      | OSP2soc       |              |
+|     | but \<NO      |               |               |              |
+|     | M             | **Fishing**:  |               |              |
+|     | ANAGEMENT\>** | OSP2- future  |               |              |
+|     |               | fisheries     |               |              |
+|     |               | dynamics but  |               |              |
+|     |               | with          |               |              |
+|     |               | MANAGEMENT    |               |              |
+|     |               | switched off  |               |              |
++-----+---------------+---------------+---------------+--------------+
+|     | **SSP2-RCP4.5 | **Climate**:  | 20 15-2100    | 3, o ptional |
+|     | with climate  | SSP-RCP       | ssp245        |              |
+|     | change and    | climate       |               |              |
+|     | OSP2 fishing, | scenario      | OSP2soc       |              |
+|     | but \<NO      | **            | \_noMPAS      |              |
+|     | MPAS\>**      | SSP2-RCP4.5** |               |              |
+|     |               |               |               |              |
+|     |               | **Fishing**:  |               |              |
+|     |               | OSP2- future  |               |              |
+|     |               | fisheries     |               |              |
+|     |               | dynamics but  |               |              |
+|     |               | with MPAs     |               |              |
+|     |               | switched off  |               |              |
++-----+---------------+---------------+---------------+--------------+
 
 #### Scenario definitions
 
@@ -418,49 +448,41 @@ under climate change. We will add additional runs later in the timeline.
 
 ##### Table 3: Climate scenario specifiers (climate-scenario).
 
-+---------------+-------------------------------------+---------------+
-| **Scenario    | **Description**                     |               |
-| specifier**   |                                     |               |
-|               | Pre-industrial climate as simulated |               |
-| picontrol     | by the Earth System Models (ESMs)   |               |
-+---------------+-------------------------------------+---------------+
-| historical    | Historical climate as simulated by  |               |
-|               | the ESMs, starting in 1950.         |               |
-+---------------+-------------------------------------+---------------+
-| ssp126        | SSP1-2.6 climate as simulated by    |               |
-|               | the ESMs \|                         |               |
-+---------------+-------------------------------------+---------------+
-| ssp245        | SSP2-4.5 climate as simulated by    |               |
-|               | the ESMs. \|                        |               |
-+---------------+-------------------------------------+---------------+
-| ssp370        | SSP3-7.0 climate as simulated by    |               |
-|               | the ESMs.                           |               |
-+---------------+-------------------------------------+---------------+
-| ssp460        | SSP4-6.0 climate as simulated by    |               |
-|               | the ESMs.                           |               |
-+---------------+-------------------------------------+---------------+
-| ssp585        | SSP5-8.5 climate as simulated by    |               |
-|               | the ESMs.                           |               |
-+---------------+-------------------------------------+---------------+
++------------------------+-------------------------------+---+
+| **Scenario specifier** | **Description**               |   |
+|                        |                               |   |
+| picontrol              | Pre-industrial climate as     |   |
+|                        | simulated by the Earth System |   |
+|                        | Models (ESMs)                 |   |
++------------------------+-------------------------------+---+
+| historical             | Historical climate as         |   |
+|                        | simulated by the ESMs,        |   |
+|                        | starting in 1950.             |   |
++------------------------+-------------------------------+---+
+| ssp126                 | SSP1-2.6 climate as simulated |   |
+|                        | by the ESMs \|                |   |
++------------------------+-------------------------------+---+
+| ssp245                 | SSP2-4.5 climate as simulated |   |
+|                        | by the ESMs. \|               |   |
++------------------------+-------------------------------+---+
+| ssp370                 | SSP3-7.0 climate as simulated |   |
+|                        | by the ESMs.                  |   |
++------------------------+-------------------------------+---+
+| ssp460                 | SSP4-6.0 climate as simulated |   |
+|                        | by the ESMs.                  |   |
++------------------------+-------------------------------+---+
+| ssp585                 | SSP5-8.5 climate as simulated |   |
+|                        | by the ESMs.                  |   |
++------------------------+-------------------------------+---+
 
 ##### Table 4: Socio-economic scenario specifiers (soc-scenario).
 
-+--------------+-------------------------------------------------------+
-| **Scenario   | **Description**                                       |
-| specifier**  |                                                       |
-+:=============+:======================================================+
-| **histsoc**  | Varying direct human influences in the historical     |
-|              | period (1850-2014) (i.e. historical estimates of      |
-|              | fishing effort).                                      |
-+--------------+-------------------------------------------------------+
-| **2015soc**  | Fixed year-2015 direct human influences (i.e. fishing |
-|              | effort).                                              |
-+--------------+-------------------------------------------------------+
-| **O          | Future fishing determined by SSP and OSP driver       |
-| SP\<x\>soc** | forcings for OSP\<x\>, where \<x\> is 1-5.            |
-+--------------+-------------------------------------------------------+
-| **nat**      | No fishing (naturalized run).                         |
-+--------------+-------------------------------------------------------+
+| **Scenario specifier** | **Description**                                                                                                     |
+|:-----------------------|:--------------------------------------------------------------------------------------------------------------------|
+| **histsoc**            | Varying direct human influences in the historical period (1850-2014) (i.e. historical estimates of fishing effort). |
+| **2015soc**            | Fixed year-2015 direct human influences (i.e. fishing effort).                                                      |
+| **O SP\<x\>soc**       | Future fishing determined by SSP and OSP driver forcings for OSP\<x\>, where \<x\> is 1-5.                          |
+| **nat**                | No fishing (naturalized run).                                                                                       |
 
 **Please remember to use these same specifiers in your output files.
 More on reporting data can be found at the end of this document.**
@@ -472,170 +494,206 @@ need to set up an account with ISIMIP to access the DKRZ server. Please
 follow the instructions here:
 <https://www.isimip.org/dashboard/accessing-isimip-data-dkrz-server/>
 
-### Climate forcing - UPDATE WITH  DE-BIASED IPSL DATA {#climate-forcing}
+### Climate forcing - UPDATE WITH DE-BIASED IPSL DATA {#climate-forcing}
 
 ##### Table 5: Climate forcing
 
-+--------+--------+----------------------------------------+--------+
-| Title  | Spec   | Institution                            | Or     |
-|        | ifiers |                                        | iginal |
-|        |        |                                        | reso   |
-|        |        |                                        | lution |
-+:=======+:=======+:=======================================+:=======+
-| GF     | gf     | National Oceanic and Atmospheric       | 2      |
-| DLESM4 | dlesm4 | Administration, Geophysical Fluid      | 88x180 |
-|        |        | Dynamics Laboratory, Princeton, NJ     |        |
-|        |        | 08540, USA                             |        |
-+--------+--------+----------------------------------------+--------+
-| IPSL   | ipslc  | Institut Pierre Simon Laplace, Paris   | 1      |
-| CM6ALR | m6a-lr | 75252, France                          | 44x143 |
-+--------+--------+----------------------------------------+--------+
-| OT     |        |                                        |        |
-| HERS?? |        |                                        |        |
-+--------+--------+----------------------------------------+--------+
+| Title       | Spec ifiers  | Institution                                                                                                      | Or iginal reso lution |
+|:------------|:-------------|:-----------------------------------------------------------------------------------------------------------------|:----------------------|
+| GF DLESM4   | gf dlesm4    | National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA | 2 88x180              |
+| IPSL CM6ALR | ipslc m6a-lr | Institut Pierre Simon Laplace, Paris 75252, France                                                               | 1 44x143              |
+| OT HERS??   |              |                                                                                                                  |                       |
 
 ##### Table 6. Climate forcing variables and units for FishMIP 3a simulations. All variables are available on a 0.25 and 1 degree horizontal grid, monthly and annual resolutions. Note: Some variables are available as specific layers extracted from vertically resolved data. Their variable names have been suffixed with -bot (ocean bottom, e.g. o2-bot), -surf (surface values, e.g. pH-surf) or -vint (vertically integrated, e.g. phyc-vint), respectively, or prefixed with int (vertically integrated, e.g. intpp). Temperature is suffixed with b or s for bottom (e.g. tob) or surface (e.g. tos) layers, respectively.
 
-+----------------------------+---------+---------+---------+---------+
-| Variable                   | Sp      | Unit    | Res     | ESM     |
-|                            | ecifier |         | olution | d       |
-|                            |         |         |         | atasets |
-+============================+=========+=========+=========+=========+
-| Mass Concentration of      | **chl** | kg m-3  | 0.25° , | GFDL,   |
-| Total Phytoplankton        |         |         | 1° grid | IPSL    |
-| Expressed as Chlorophyll   |         |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Sea Floor Depth            | \*dep   | m       | 0.25° , | GFDL,   |
-|                            | tho\*\* |         | 1° grid | IPSL    |
-+----------------------------+---------+---------+---------+---------+
-| Downward Flux of P         | **exp   | mol m-2 | 0.25° , | GFDL,   |
-| articulate Organic Carbon  | c-bot** | s-1     | 1° grid | IPSL    |
-+----------------------------+---------+---------+---------+---------+
-| P articulate Organic       | \*      | kg m-2  | 0.25° , | GFDL,   |
-| Carbon Content             | int     |         | 1° grid | IPSL    |
-|                            | poc\*\* |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Primary Organic Carbon     | **      | mol m-2 | 0.25° , | GFDL,   |
-| Production by All Types of | intpp** | s-1     | 1° grid | IPSL    |
-| Phytoplankton              |         |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Net Primary Organic Carbon | **intp  | mol m-2 | 0.25° , | GFDL,   |
-| Production by Diatoms      | pdiat** | s-1     | 1° grid | IPSL    |
-+----------------------------+---------+---------+---------+---------+
-| Net Primary Mole           | **intp  | mol m-2 | 0.25° , | GFDL,   |
-| Productivity of Carbon by  | pdiaz** | s-1     | 1° grid | IPSL    |
-| Diazotrophs                |         |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Net Primary Mole           | **intp  | mol m-2 | 0.25° , | GFDL,   |
-| Productivity of Carbon by  | ppico** | s-1     | 1° grid | IPSL    |
-| Picophytoplankton          |         |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Maximum Ocean Mixed Layer  | \       | m       | 0.25° , | GFDL,   |
-| Thickness Defined by Sigma | *mlotst |         | 1° grid | IPSL    |
-| T                          |         |         |         |         |
-|                            | -0      |         |         |         |
-|                            | 125\*\* |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Dissolved Oxygen           | **o2,** | mol m-3 | 0.25° , | GFDL,   |
-| Concentration              |         |         | 1° grid | IPSL    |
-|                            | **o     | mol m-2 |         |         |
-|                            | 2-bot** |         |         |         |
-|                            |         | mol m-2 |         |         |
-|                            | **o2    |         |         |         |
-|                            | -surf** |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| pH                         | **ph**  | 1       | 0.25° , | GFDL,   |
-|                            |         |         | 1° grid | IPSL    |
-|                            | **p     | 1       |         |         |
-|                            | h-bot** |         |         |         |
-|                            |         | 1       |         |         |
-|                            | **ph    |         |         |         |
-|                            | -surf** |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Phytoplankton Carbon       | \*p     | mol m-3 | 0.25° , | GFDL,   |
-| Concentration              | hyc\*\* |         | 1° grid | IPSL    |
-|                            |         | mol m-2 |         |         |
-|                            | **phyc  |         |         |         |
-|                            | -vint** |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Mole Concentration of      | **ph    | mol m-3 | 0.25° , | GFDL,   |
-| Diatoms expressed as       | ydiat** |         | 1° grid | IPSL    |
-| Carbon in sea water        |         | mol m-2 |         |         |
-|                            | **      |         |         |         |
-|                            | phydiat |         |         |         |
-|                            | -vint** |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Mole Concentration of      | **ph    | mol m-3 | 0.25° , | GFDL,   |
-| Diazotrophs Expressed as   | ydiaz** |         | 1° grid | IPSL    |
-| Carbon in Sea Water        |         | mol m-2 |         |         |
-|                            | **      |         |         |         |
-|                            | phydiaz |         |         |         |
-|                            | -vint** |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Mole Concentration of      | **ph    | mol m-3 | 0.25° , | GFDL,   |
-| Picophytoplankton          | ypico** |         | 1° grid | IPSL    |
-| Expressed as Carbon in Sea |         | mol m-2 |         |         |
-| Water                      | **      |         |         |         |
-|                            | phypico |         |         |         |
-|                            | -vint** |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Sea Water Salinity         | **so**  | ‰ \|    |         |         |
-|                            |         | 0.25° , |         |         |
-|                            | **s     | 1° grid |         |         |
-|                            | o-bot** | \|      |         |         |
-|                            |         | GFDL,   |         |         |
-|                            | **so    | IPSL \| |         |         |
-|                            | -surf** | \| ‰ \| |         |         |
-|                            |         | \| \|   |         |         |
-|                            |         | \| \| % |         |         |
-|                            |         | \| \|   |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Sea Water Potential        | **t     | °C      | 0.25° , | GFDL,   |
-| Temperature                | hetao** |         | 1° grid | IPSL    |
-+----------------------------+---------+---------+---------+---------+
-| Ocean Model Cell Thickness | **thk   | m       | 0.25° , | GFDL,   |
-|                            | cello** |         | 1° grid | IPSL    |
-+----------------------------+---------+---------+---------+---------+
-| Sea Water Potential        | **tob** | °C      | 0.25° , | GFDL,   |
-| Temperature at Sea Floor   |         |         | 1° grid | IPSL    |
-+----------------------------+---------+---------+---------+---------+
-| Sea Surface Temperature    | **tos** | °C      | 0.25° , | GFDL,   |
-|                            |         |         | 1° grid | IPSL    |
-+----------------------------+---------+---------+---------+---------+
-| Sea Water X Velocity       | **uo**  | m s-1   | 0.25° , | GFDL,   |
-|                            |         |         | 1° grid | IPSL    |
-+----------------------------+---------+---------+---------+---------+
-| Sea Water Y Velocity       | **vo**  | m s-1   | 0.25° , | GFDL,   |
-|                            |         |         | 1° grid | IPSL    |
-+----------------------------+---------+---------+---------+---------+
-| Mole Concentration of      | **      | mol m-3 | 0.25° , | GFDL,   |
-| Mesozooplankton expressed  | zmeso** |         | 1° grid | IPSL    |
-| as Carbon in sea water     |         | mol m-2 |         |         |
-|                            | **zmeso |         |         |         |
-|                            | -vint** |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Mole Concentration of      | **z     | mol m-3 | 0.25° , | GFDL,   |
-| Microzooplankton expressed | micro** |         | 1° grid | IPSL    |
-| as Carbon in sea water     |         | mol m-2 |         |         |
-|                            | \       |         |         |         |
-|                            | *zmicro |         |         |         |
-|                            |         |         |         |         |
-|                            | -v      |         |         |         |
-|                            | int\*\* |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Zooplankton Carbon         | \*z     | mol m-3 | 0.25° , | GFDL,   |
-| Concentration              | ooc\*\* |         | 1° grid | IPSL    |
-|                            |         | mol m-2 |         |         |
-|                            | **zooc  |         |         |         |
-|                            | -vint** |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Net Downward Shortwave     | **r     | W m-2   | 0.25° , | GFDL,   |
-| Radiation at Sea Water     | sntds** |         | 1° grid | IPSL    |
-| Surface                    |         |         |         |         |
-+----------------------------+---------+---------+---------+---------+
-| Sea Ice Area Fraction      | **s     | \%      | 0.25° , | GFDL,   |
-|                            | iconc** |         | 1° grid | IPSL    |
-+----------------------------+---------+---------+---------+---------+
++-------------+-------------+-------------+-------------+-------------+
+| Variable    | Sp ecifier  | Unit        | Res olution | ESM d       |
+|             |             |             |             | atasets     |
++=============+=============+=============+=============+=============+
+| Mass        | **chl**     | kg m-3      | 0.25° , 1°  | GFDL, IPSL  |
+| Co          |             |             | grid        |             |
+| ncentration |             |             |             |             |
+| of Total    |             |             |             |             |
+| Ph          |             |             |             |             |
+| ytoplankton |             |             |             |             |
+| Expressed   |             |             |             |             |
+| as          |             |             |             |             |
+| Chlorophyll |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Sea Floor   | \*dep       | m           | 0.25° , 1°  | GFDL, IPSL  |
+| Depth       | tho\*\*     |             | grid        |             |
++-------------+-------------+-------------+-------------+-------------+
+| Downward    | **exp       | mol m-2 s-1 | 0.25° , 1°  | GFDL, IPSL  |
+| Flux of P   | c-bot**     |             | grid        |             |
+| articulate  |             |             |             |             |
+| Organic     |             |             |             |             |
+| Carbon      |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| P           | \* int      | kg m-2      | 0.25° , 1°  | GFDL, IPSL  |
+| articulate  | poc\*\*     |             | grid        |             |
+| Organic     |             |             |             |             |
+| Carbon      |             |             |             |             |
+| Content     |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Primary     | **intpp**   | mol m-2 s-1 | 0.25° , 1°  | GFDL, IPSL  |
+| Organic     |             |             | grid        |             |
+| Carbon      |             |             |             |             |
+| Production  |             |             |             |             |
+| by All      |             |             |             |             |
+| Types of    |             |             |             |             |
+| Ph          |             |             |             |             |
+| ytoplankton |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Net Primary | **intp      | mol m-2 s-1 | 0.25° , 1°  | GFDL, IPSL  |
+| Organic     | pdiat**     |             | grid        |             |
+| Carbon      |             |             |             |             |
+| Production  |             |             |             |             |
+| by Diatoms  |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Net Primary | **intp      | mol m-2 s-1 | 0.25° , 1°  | GFDL, IPSL  |
+| Mole        | pdiaz**     |             | grid        |             |
+| P           |             |             |             |             |
+| roductivity |             |             |             |             |
+| of Carbon   |             |             |             |             |
+| by          |             |             |             |             |
+| Diazotrophs |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Net Primary | **intp      | mol m-2 s-1 | 0.25° , 1°  | GFDL, IPSL  |
+| Mole        | ppico**     |             | grid        |             |
+| P           |             |             |             |             |
+| roductivity |             |             |             |             |
+| of Carbon   |             |             |             |             |
+| by          |             |             |             |             |
+| Picoph      |             |             |             |             |
+| ytoplankton |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Maximum     | \           | m           | 0.25° , 1°  | GFDL, IPSL  |
+| Ocean Mixed | \*mlotst    |             | grid        |             |
+| Layer       |             |             |             |             |
+| Thickness   | -0 125\*\*  |             |             |             |
+| Defined by  |             |             |             |             |
+| Sigma T     |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Dissolved   | **o2,**     | mol m-3     | 0.25° , 1°  | GFDL, IPSL  |
+| Oxygen      |             |             | grid        |             |
+| Co          | **o 2-bot** | mol m-2     |             |             |
+| ncentration |             |             |             |             |
+|             | **o2        | mol m-2     |             |             |
+|             | -surf**     |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| pH          | **ph**      | 1           | 0.25° , 1°  | GFDL, IPSL  |
+|             |             |             | grid        |             |
+|             | **p h-bot** | 1           |             |             |
+|             |             |             |             |             |
+|             | **ph        | 1           |             |             |
+|             | -surf**     |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Ph          | \*p hyc\*\* | mol m-3     | 0.25° , 1°  | GFDL, IPSL  |
+| ytoplankton |             |             | grid        |             |
+| Carbon      | **phyc      | mol m-2     |             |             |
+| Co          | -vint**     |             |             |             |
+| ncentration |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Mole        | **ph        | mol m-3     | 0.25° , 1°  | GFDL, IPSL  |
+| Co          | ydiat**     |             | grid        |             |
+| ncentration |             | mol m-2     |             |             |
+| of Diatoms  | **phydiat   |             |             |             |
+| expressed   | -vint**     |             |             |             |
+| as Carbon   |             |             |             |             |
+| in sea      |             |             |             |             |
+| water       |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Mole        | **ph        | mol m-3     | 0.25° , 1°  | GFDL, IPSL  |
+| Co          | ydiaz**     |             | grid        |             |
+| ncentration |             | mol m-2     |             |             |
+| of          | **phydiaz   |             |             |             |
+| Diazotrophs | -vint**     |             |             |             |
+| Expressed   |             |             |             |             |
+| as Carbon   |             |             |             |             |
+| in Sea      |             |             |             |             |
+| Water       |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Mole        | **ph        | mol m-3     | 0.25° , 1°  | GFDL, IPSL  |
+| Co          | ypico**     |             | grid        |             |
+| ncentration |             | mol m-2     |             |             |
+| of          | **phypico   |             |             |             |
+| Picoph      | -vint**     |             |             |             |
+| ytoplankton |             |             |             |             |
+| Expressed   |             |             |             |             |
+| as Carbon   |             |             |             |             |
+| in Sea      |             |             |             |             |
+| Water       |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Sea Water   | **so**      | ‰ \| 0.25°  |             |             |
+| Salinity    |             | , 1° grid   |             |             |
+|             | **s o-bot** | \| GFDL,    |             |             |
+|             |             | IPSL \| \|  |             |             |
+|             | **so        | ‰ \| \| \|  |             |             |
+|             | -surf**     | \| \| % \|  |             |             |
+|             |             | \|          |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Sea Water   | **t hetao** | °C          | 0.25° , 1°  | GFDL, IPSL  |
+| Potential   |             |             | grid        |             |
+| Temperature |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Ocean Model | **thk       | m           | 0.25° , 1°  | GFDL, IPSL  |
+| Cell        | cello**     |             | grid        |             |
+| Thickness   |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Sea Water   | **tob**     | °C          | 0.25° , 1°  | GFDL, IPSL  |
+| Potential   |             |             | grid        |             |
+| Temperature |             |             |             |             |
+| at Sea      |             |             |             |             |
+| Floor       |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Sea Surface | **tos**     | °C          | 0.25° , 1°  | GFDL, IPSL  |
+| Temperature |             |             | grid        |             |
++-------------+-------------+-------------+-------------+-------------+
+| Sea Water X | **uo**      | m s-1       | 0.25° , 1°  | GFDL, IPSL  |
+| Velocity    |             |             | grid        |             |
++-------------+-------------+-------------+-------------+-------------+
+| Sea Water Y | **vo**      | m s-1       | 0.25° , 1°  | GFDL, IPSL  |
+| Velocity    |             |             | grid        |             |
++-------------+-------------+-------------+-------------+-------------+
+| Mole        | **zmeso**   | mol m-3     | 0.25° , 1°  | GFDL, IPSL  |
+| Co          |             |             | grid        |             |
+| ncentration | **zmeso     | mol m-2     |             |             |
+| of          | -vint**     |             |             |             |
+| Meso        |             |             |             |             |
+| zooplankton |             |             |             |             |
+| expressed   |             |             |             |             |
+| as Carbon   |             |             |             |             |
+| in sea      |             |             |             |             |
+| water       |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Mole        | **z micro** | mol m-3     | 0.25° , 1°  | GFDL, IPSL  |
+| Co          |             |             | grid        |             |
+| ncentration | \           | mol m-2     |             |             |
+| of          | \*zmicro    |             |             |             |
+| Micro       |             |             |             |             |
+| zooplankton | -v int\*\*  |             |             |             |
+| expressed   |             |             |             |             |
+| as Carbon   |             |             |             |             |
+| in sea      |             |             |             |             |
+| water       |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Zooplankton | \*z ooc\*\* | mol m-3     | 0.25° , 1°  | GFDL, IPSL  |
+| Carbon      |             |             | grid        |             |
+| Co          | **zooc      | mol m-2     |             |             |
+| ncentration | -vint**     |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Net         | **r sntds** | W m-2       | 0.25° , 1°  | GFDL, IPSL  |
+| Downward    |             |             | grid        |             |
+| Shortwave   |             |             |             |             |
+| Radiation   |             |             |             |             |
+| at Sea      |             |             |             |             |
+| Water       |             |             |             |             |
+| Surface     |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| Sea Ice     | **s iconc** | \%          | 0.25° , 1°  | GFDL, IPSL  |
+| Area        |             |             | grid        |             |
+| Fraction    |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
 
 ### Climate forcing file locations
 
@@ -677,186 +735,142 @@ provided here: <https://github.com/Fish-MIP/FishMIP_extracting-data>
 
 ##### Table 7: Fishing effort forcing files and variables for FishMIP 3b simulations.
 
-+--------+----------------------------------------+--------+--------+
-| Spe    | Included variables (short names) and   | Time   | Fi     |
-| cifier | definitions                            | period | lename |
-|        |                                        | /Reso  |        |
-|        |                                        | lution |        |
-+========+========================================+========+========+
-| h      | NomActive = Nominal fishing effort of  | -      |        |
-| istsoc | the active fleet dis-aggregated by:    |    185 |        |
-|        |                                        | 0-2015 |        |
-|        | -   eez_country_name = The exclusive   |        |        |
-|        |     economic zone/high seas name in    | -      |        |
-|        |     which fishing effort is occurring  | Annual |        |
-|        |                                        |        |        |
-|        | -   LME = A number code of the Large   |        |        |
-|        |     Marine ecosystem in which the      |        |        |
-|        |     Effort is occurring                |        |        |
-|        |                                        |        |        |
-|        | -   SAUP = A number code for the       |        |        |
-|        |     fishing country, following Sea     |        |        |
-|        |     Around Us numbering                |        |        |
-|        |                                        |        |        |
-|        | -   Gear = the fishing gear            |        |        |
-|        |                                        |        |        |
-|        | -   FGroup = the targeted functional   |        |        |
-|        |     group                              |        |        |
-|        |                                        |        |        |
-|        | -   Sector = the fishing sector        |        |        |
-|        |     defined by the law of the country  |        |        |
-+--------+----------------------------------------+--------+--------+
-| 2      | Final year of values from histsoc      | -      |        |
-| 015soc | repeated until 2100                    |    201 |        |
-|        |                                        | 5-2100 |        |
-|        |                                        |        |        |
-|        |                                        | -      |        |
-|        |                                        | Annual |        |
-+--------+----------------------------------------+--------+--------+
-| O      | Which variables? Determined from %     | -      |        |
-| SP1soc | change relative to 2015 in             |    201 |        |
-|        | SSP1Population, SSP1GDP and relative   | 5-2100 |        |
-|        | change to 2015 (drivers of?) fishing   |        |        |
-|        | effort                                 | -      |        |
-|        |                                        | Annual |        |
-+--------+----------------------------------------+--------+--------+
-| O      | Which variables? Determined from %     | -      |        |
-| SP2soc | change relative to 2015 in             |    201 |        |
-|        | SSP5Population, SSP5GDP and relative   | 5-2100 |        |
-|        | change to 2015 (drivers of?) fishing   |        |        |
-|        | effort                                 | -      |        |
-|        |                                        | Annual |        |
-+--------+----------------------------------------+--------+--------+
-| Hist   |                                        |        |        |
-| orical |                                        |        |        |
-| Popu   |                                        |        |        |
-| lation |                                        |        |        |
-+--------+----------------------------------------+--------+--------+
-| Hist   |                                        |        |        |
-| orical |                                        |        |        |
-| GDP    |                                        |        |        |
-+--------+----------------------------------------+--------+--------+
-| O      |                                        |        |        |
-| THERS? |                                        |        |        |
-+--------+----------------------------------------+--------+--------+
-| SSP1   |                                        |        |        |
-| Popu   |                                        |        |        |
-| lation |                                        |        |        |
-+--------+----------------------------------------+--------+--------+
-| S      |                                        |        |        |
-| SP1GDP |                                        |        |        |
-+--------+----------------------------------------+--------+--------+
-| SSP5P  |                                        |        |        |
-| opu    |                                        |        |        |
-| lation |                                        |        |        |
-+--------+----------------------------------------+--------+--------+
-| SSP5   |                                        |        |        |
-| GDP    |                                        |        |        |
-+--------+----------------------------------------+--------+--------+
-| MPAs   | NEED TO MAKE THIS (Kelsey , Derek)     |        |        |
-+--------+----------------------------------------+--------+--------+
++-----------------+-----------------+-----------------+-----------+
+| Spe cifier      | Included        | Time period     | Fi lename |
+|                 | variables       | /Reso lution    |           |
+|                 | (short names)   |                 |           |
+|                 | and definitions |                 |           |
++=================+=================+=================+===========+
+| h istsoc        | NomActive =     | -   185 0-2015  |           |
+|                 | Nominal fishing |                 |           |
+|                 | effort of the   | -   Annual      |           |
+|                 | active fleet    |                 |           |
+|                 | dis-aggregated  |                 |           |
+|                 | by:             |                 |           |
+|                 |                 |                 |           |
+|                 | -   e           |                 |           |
+|                 | ez_country_name |                 |           |
+|                 |     = The       |                 |           |
+|                 |     exclusive   |                 |           |
+|                 |     economic    |                 |           |
+|                 |     zone/high   |                 |           |
+|                 |     seas name   |                 |           |
+|                 |     in which    |                 |           |
+|                 |     fishing     |                 |           |
+|                 |     effort is   |                 |           |
+|                 |     occurring   |                 |           |
+|                 |                 |                 |           |
+|                 | -   LME = A     |                 |           |
+|                 |     number code |                 |           |
+|                 |     of the      |                 |           |
+|                 |     Large       |                 |           |
+|                 |     Marine      |                 |           |
+|                 |     ecosystem   |                 |           |
+|                 |     in which    |                 |           |
+|                 |     the Effort  |                 |           |
+|                 |     is          |                 |           |
+|                 |     occurring   |                 |           |
+|                 |                 |                 |           |
+|                 | -   SAUP = A    |                 |           |
+|                 |     number code |                 |           |
+|                 |     for the     |                 |           |
+|                 |     fishing     |                 |           |
+|                 |     country,    |                 |           |
+|                 |     following   |                 |           |
+|                 |     Sea Around  |                 |           |
+|                 |     Us          |                 |           |
+|                 |     numbering   |                 |           |
+|                 |                 |                 |           |
+|                 | -   Gear = the  |                 |           |
+|                 |     fishing     |                 |           |
+|                 |     gear        |                 |           |
+|                 |                 |                 |           |
+|                 | -   FGroup =    |                 |           |
+|                 |     the         |                 |           |
+|                 |     targeted    |                 |           |
+|                 |     functional  |                 |           |
+|                 |     group       |                 |           |
+|                 |                 |                 |           |
+|                 | -   Sector =    |                 |           |
+|                 |     the fishing |                 |           |
+|                 |     sector      |                 |           |
+|                 |     defined by  |                 |           |
+|                 |     the law of  |                 |           |
+|                 |     the country |                 |           |
++-----------------+-----------------+-----------------+-----------+
+| 2 015soc        | Final year of   | -   201 5-2100  |           |
+|                 | values from     |                 |           |
+|                 | histsoc         | -   Annual      |           |
+|                 | repeated until  |                 |           |
+|                 | 2100            |                 |           |
++-----------------+-----------------+-----------------+-----------+
+| O SP1soc        | Which           | -   201 5-2100  |           |
+|                 | variables?      |                 |           |
+|                 | Determined from | -   Annual      |           |
+|                 | % change        |                 |           |
+|                 | relative to     |                 |           |
+|                 | 2015 in         |                 |           |
+|                 | SSP1Population, |                 |           |
+|                 | SSP1GDP and     |                 |           |
+|                 | relative change |                 |           |
+|                 | to 2015         |                 |           |
+|                 | (drivers of?)   |                 |           |
+|                 | fishing effort  |                 |           |
++-----------------+-----------------+-----------------+-----------+
+| O SP2soc        | Which           | -   201 5-2100  |           |
+|                 | variables?      |                 |           |
+|                 | Determined from | -   Annual      |           |
+|                 | % change        |                 |           |
+|                 | relative to     |                 |           |
+|                 | 2015 in         |                 |           |
+|                 | SSP5Population, |                 |           |
+|                 | SSP5GDP and     |                 |           |
+|                 | relative change |                 |           |
+|                 | to 2015         |                 |           |
+|                 | (drivers of?)   |                 |           |
+|                 | fishing effort  |                 |           |
++-----------------+-----------------+-----------------+-----------+
+| Hist orical     |                 |                 |           |
+| Popu lation     |                 |                 |           |
++-----------------+-----------------+-----------------+-----------+
+| Hist orical GDP |                 |                 |           |
++-----------------+-----------------+-----------------+-----------+
+| O THERS?        |                 |                 |           |
++-----------------+-----------------+-----------------+-----------+
+| SSP1 Popu       |                 |                 |           |
+| lation          |                 |                 |           |
++-----------------+-----------------+-----------------+-----------+
+| S SP1GDP        |                 |                 |           |
++-----------------+-----------------+-----------------+-----------+
+| SSP5P opu       |                 |                 |           |
+| lation          |                 |                 |           |
++-----------------+-----------------+-----------------+-----------+
+| SSP5 GDP        |                 |                 |           |
++-----------------+-----------------+-----------------+-----------+
+| MPAs            | NEED TO MAKE    |                 |           |
+|                 | THIS (Kelsey ,  |                 |           |
+|                 | Derek)          |                 |           |
++-----------------+-----------------+-----------------+-----------+
 
 ##### Table 8: Metadata for histsoc fishing effort variables.
 
-+--------+--------+--------+----------------------------------------+
-| Va     | Long   | Unit   | Description/notes                      |
-| riable | name   |        |                                        |
-| Name   |        |        |                                        |
-+:=======+:=======+:=======+:=======================================+
-| Year   | (End   | Number |                                        |
-|        | of     | code   |                                        |
-|        | the)   |        |                                        |
-|        | year   |        |                                        |
-|        | when   |        |                                        |
-|        | the    |        |                                        |
-|        | f      |        |                                        |
-|        | ishing |        |                                        |
-|        | effort |        |                                        |
-|        | is     |        |                                        |
-|        | occ    |        |                                        |
-|        | urring |        |                                        |
-+--------+--------+--------+----------------------------------------+
-| Sector | The    | Name   | I = Industrial and A = artisanal,      |
-|        | f      | code   | where artisanal include powered and    |
-|        | ishing |        | unpowered artisanal fleets             |
-|        | sector |        |                                        |
-|        | d      |        |                                        |
-|        | efined |        |                                        |
-|        | by the |        |                                        |
-|        | law of |        |                                        |
-|        | the    |        |                                        |
-|        | c      |        |                                        |
-|        | ountry |        |                                        |
-+--------+--------+--------+----------------------------------------+
-| LME    | Large  | Number | A number code of the Large Marine      |
-|        | Marine | code   | ecosystem in which the Effort is       |
-|        | Eco    |        | occurring                              |
-|        | system |        |                                        |
-|        | Number |        |                                        |
-+--------+--------+--------+----------------------------------------+
-| eez\_  | Exc    | Name   | The country-level exclusive economic   |
-| countr | lusive | code   | zone (or high seas) name in which      |
-| y_name | Ec     |        | fishing effort is occurring            |
-|        | onomic |        |                                        |
-|        | Zone   |        |                                        |
-+--------+--------+--------+----------------------------------------+
-| SAUP   | A      | Number | Ex supranational entities (USSR,       |
-|        | number | code   | Yugoslavia) are disaggregated to their |
-|        | code   |        | constituent countries. Serbian Fishing |
-|        | for    |        | Effort included with Montenegro.       |
-|        | the    |        | Crimea included with Ukrainian.        |
-|        | f      |        |                                        |
-|        | ishing |        |                                        |
-|        | co     |        |                                        |
-|        | untry, |        |                                        |
-|        | fol    |        |                                        |
-|        | lowing |        |                                        |
-|        | Sea    |        |                                        |
-|        | Around |        |                                        |
-|        | Us     |        |                                        |
-|        | num    |        |                                        |
-|        | bering |        |                                        |
-+--------+--------+--------+----------------------------------------+
-| Gear   | The    | Name   | Gear names                             |
-|        | f      | code   |                                        |
-|        | ishing |        |                                        |
-|        | gear   |        |                                        |
-+--------+--------+--------+----------------------------------------+
-| FGroup | The    | Name   | Functional groups are in accordance    |
-|        | ta     | code   | with those used by the Sea Around Us   |
-|        | rgeted |        | Project                                |
-|        | func   |        |                                        |
-|        | tional |        |                                        |
-|        | group  |        |                                        |
-+--------+--------+--------+----------------------------------------+
-| Nom    | N      | Days   | NomActive (of the active fleet; i.e.,  |
-| Active | ominal | at sea | total) = P (engine power of active the |
-|        | f      | X kW   | fleet; i.e., total) x DAS (average     |
-|        | ishing |        | days at sea of one vessel). Average    |
-|        | effort |        | DAS for one vessel \~ 200 DAS/year.    |
-|        | (i.e., |        | NomActive corresponds to the total     |
-|        | not    |        | (reported, IUU, discards) catch. To    |
-|        | inc    |        | find NomActive in DAS do (NomActive/P) |
-|        | luding |        | X NV                                   |
-|        | the    |        |                                        |
-|        | t      |        |                                        |
-|        | echnol |        |                                        |
-|        | ogical |        |                                        |
-|        | creep) |        |                                        |
-|        | of the |        |                                        |
-|        | active |        |                                        |
-|        | fleet  |        |                                        |
-+--------+--------+--------+----------------------------------------+
+| Va riable Name      | Long name                                                                                     | Unit             | Description/notes                                                                                                                                                                                                                                                                                          |
+|:--------------------|:----------------------------------------------------------------------------------------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Year                | (End of the) year when the f ishing effort is occ urring                                      | Number code      |                                                                                                                                                                                                                                                                                                            |
+| Sector              | The f ishing sector d efined by the law of the c ountry                                       | Name code        | I = Industrial and A = artisanal, where artisanal include powered and unpowered artisanal fleets                                                                                                                                                                                                           |
+| LME                 | Large Marine Eco system Number                                                                | Number code      | A number code of the Large Marine ecosystem in which the Effort is occurring                                                                                                                                                                                                                               |
+| eez\_ countr y_name | Exc lusive Ec onomic Zone                                                                     | Name code        | The country-level exclusive economic zone (or high seas) name in which fishing effort is occurring                                                                                                                                                                                                         |
+| SAUP                | A number code for the f ishing co untry, fol lowing Sea Around Us num bering                  | Number code      | Ex supranational entities (USSR, Yugoslavia) are disaggregated to their constituent countries. Serbian Fishing Effort included with Montenegro. Crimea included with Ukrainian.                                                                                                                            |
+| Gear                | The f ishing gear                                                                             | Name code        | Gear names                                                                                                                                                                                                                                                                                                 |
+| FGroup              | The ta rgeted func tional group                                                               | Name code        | Functional groups are in accordance with those used by the Sea Around Us Project                                                                                                                                                                                                                           |
+| Nom Active          | N ominal f ishing effort (i.e., not inc luding the t echnol ogical creep) of the active fleet | Days at sea X kW | NomActive (of the active fleet; i.e., total) = P (engine power of active the fleet; i.e., total) x DAS (average days at sea of one vessel). Average DAS for one vessel \~ 200 DAS/year. NomActive corresponds to the total (reported, IUU, discards) catch. To find NomActive in DAS do (NomActive/P) X NV |
 
 ##### Table 9: Details for OSP relative change in drivers of fishing effort variables. HOW TO DESCRIBE HOW WE WILL VARY MANAGEMENT IN THE MODELS ACROSS OSPs??
 
-+---------------------+----------------------------------------------+
-| OSP                 | Management                                   |
-+=====================+==============================================+
-| OSP1                | All stocks fished at Fmsy or B/B0 \> 0.5??   |
-+---------------------+----------------------------------------------+
-| OSP5                | Fmsy or B/B0??                               |
-+---------------------+----------------------------------------------+
+| OSP  | Management                                 |
+|------|--------------------------------------------|
+| OSP1 | All stocks fished at Fmsy or B/B0 \> 0.5?? |
+| OSP5 | Fmsy or B/B0??                             |
 
 #### Implementation of OSPs
 
@@ -966,177 +980,229 @@ covers the experiment period (1961-2010).
 
 ##### Table 9: Mandatory output variables for Fisheries and Marine Ecosystem models (global and regional). See notes on additional optional model outputs below. Please use the value 1.e+20 for missing data within your output files. **All biomasses are in wet weight (not g C).**
 
-+--------------+--------+--------+--------+--------------------------+
-| Variable     | Va     | Unit   | Reso   | Comments                 |
-| long name    | riable |        | lution |                          |
-|              | spe    |        |        |                          |
-|              | cifier |        |        |                          |
-+==============+========+========+========+==========================+
-| Total        | *      | g m-2  | 0.25°  | All consumers (trophic   |
-| Consumer     | *tcb** |        | grid   | level \>1, vertebrates   |
-| Biomass      |        |        |        | and invertebrates)       |
-| Density      |        |        | m      |                          |
-|              |        |        | onthly |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Total        | **tcbl | g m-2  | 0.25°  | **Level                  |
-| Consumer     | og10** |        | grid   | dimensions:** (time,     |
-| Biomass      |        |        |        | bins, lat, lon).         |
-| Density in   |        |        | m      |                          |
-| log10 Weight |        |        | onthly | If the model is          |
-| Bins         |        |        |        | size-structured, please  |
-|              |        |        |        | provide biomass in equal |
-|              |        |        |        | log 10 g weight bins     |
-|              |        |        |        | (1-10g, 10-100g,         |
-|              |        |        |        | 100g-1kg, 1-10kg,        |
-|              |        |        |        | 10-100kg, \>100kg)       |
-+--------------+--------+--------+--------+--------------------------+
-| Total        | *      | g m-2  | 0.25°  | All pelagic consumers    |
-| Pelagic      | *tpb** |        | grid   | (trophic level \>1,      |
-| Biomass      |        |        |        | vertebrates and          |
-| Density      |        |        | m      | invertebrates)           |
-|              |        |        | onthly |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Total        | *      | g m-2  | 0.25°  | All demersal consumers   |
-| Demersal     | *tdb** |        | grid   | (trophic level \>1,      |
-| Biomass      |        |        |        | vertebrates and          |
-| Density      |        |        | m      | invertebrates)           |
-|              |        |        | onthly |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Total Catch  | **tc** | g m-2  | 0.25°  | Catch at sea (all catch  |
-| Density (all |        |        | grid   | as a result of all       |
-| commercial   |        |        |        | effort including         |
-| functional   |        |        | m      | reported and IUU) summed |
-| groups /     |        |        | onthly | for both Industrial and  |
-| size         |        |        |        | Artisanal sector.        |
-| classes)     |        |        |        |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Total        | *      | g m-2  | 0.25°  | Catch at sea (all catch  |
-| Industrial   | *tic** |        | grid   | as a result of all       |
-| Catch        |        |        |        | effort including         |
-| Density (all |        |        | m      | reported and IUU) for    |
-| commercial   |        |        | onthly | Industrial sector only.  |
-| functional   |        |        |        |                          |
-| groups /     |        |        |        |                          |
-| size         |        |        |        |                          |
-| classes)     |        |        |        |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Total Catch  | **tcl  | g m-2  | 0.25°  | **Level                  |
-| Density in   | og10** |        | grid   | dimensions:** (time,     |
-| log10 Weight |        |        |        | bins, lat, lon).         |
-| Bins across  |        |        | m      |                          |
-| both sectors |        |        | onthly | If the model is          |
-|              |        |        |        | size-structured, please  |
-|              |        |        |        | provide biomass in equal |
-|              |        |        |        | log 10 g weight bins     |
-|              |        |        |        | (1-10g, 10-100g,         |
-|              |        |        |        | 100g-1kg, 1-10kg,        |
-|              |        |        |        | 10-100kg, \>100kg)       |
-+--------------+--------+--------+--------+--------------------------+
-| Total        | *      | g m-2  | 0.25°  | Catch at sea of all      |
-| Pelagic      | *tpc** |        | grid   | pelagic consumers        |
-| Density      |        |        |        | (trophic level \>1,      |
-| Catch across |        |        | m      | vertebrates and          |
-| Artisanal    |        |        | onthly | invertebrates)           |
-| and          |        |        |        |                          |
-| Industrial   |        |        |        |                          |
-| sectors      |        |        |        |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Total        | *      | g m-2  | 0.25°  | Catch at sea of all      |
-| Demersal     | *tdc** |        | grid   | demersal consumers       |
-| Catch        |        |        |        | (trophic level \>1,      |
-| Density      |        |        | m      | vertebrates and          |
-| across       |        |        | onthly | invertebrates)           |
-| Artisanal    |        |        |        |                          |
-| and          |        |        |        |                          |
-| Industrial   |        |        |        |                          |
-| sectors      |        |        |        |                          |
-+--------------+--------+--------+--------+--------------------------+
-| **Optional   |        |        |        |                          |
-| output from  |        |        |        |                          |
-| global and   |        |        |        |                          |
-| regional     |        |        |        |                          |
-| models. All  |        |        |        |                          |
-| biomasses    |        |        |        |                          |
-| are in wet   |        |        |        |                          |
-| weight, not  |        |        |        |                          |
-| g C.**       |        |        |        |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Biomass      | **bp   | g m-2  | 0.25°  | If a pelagic species and |
-| Density of   | 30cm** |        | grid   | L infinity is \<30 cm,   |
-| Small        |        |        |        | include in this variable |
-| Pelagics     |        |        | m      |                          |
-| \<30cm       |        |        | onthly |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Biomass      | **     | g m-2  | 0.25°  | If a pelagic species and |
-| Density of   | bp30to |        | grid   | L infinity is \>=30 cm   |
-| Medium       | 90cm** |        |        | and \<90cm, include in   |
-| Pelagics     |        |        | m      | this variable            |
-| \>=30cm and  |        |        | onthly |                          |
-| \<90cm       |        |        |        |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Biomass      | **bp   | g m-2  | 0.25°  | If a pelagic species and |
-| Density of   | 90cm** |        | grid   | L infinity is \>=90cm,   |
-| Large        |        |        |        | include in this variable |
-| Pelagics     |        |        | m      |                          |
-| \>=90cm      |        |        | onthly |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Biomass      | **bd   | g m-2  | 0.25°  | If a demersal species    |
-| Density of   | 30cm** |        | grid   | and L infinity is \<30   |
-| Small        |        |        |        | cm, include in this      |
-| Demersals    |        |        | m      | variable                 |
-| \<30cm       |        |        | onthly |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Biomass      | **     | g m-2  | 0.25°  | If a demersal species    |
-| Density of   | bd30to |        | grid   | and L infinity is \>=30  |
-| Medium       | 90cm** |        |        | cm and \<90cm, include   |
-| Demersals    |        |        | m      | in this variable         |
-| \>=30cm and  |        |        | onthly |                          |
-| \<90cm       |        |        |        |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Biomass      | **bd   | g m-2  | 0.25°  | If a demersal species    |
-| Density of   | 90cm** |        | grid   | and L infinity is        |
-| Large        |        |        |        | \>=90cm, include in this |
-| Demersals    |        |        | m      | variable                 |
-| \>=90cm      |        |        | onthly |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Catch        | **cp   | g m-2  | 0.25°  | Catch at sea of pelagic  |
-| Density of   | 30cm** |        | grid   | species with L infinity  |
-| Small        |        |        |        | \<30 cm                  |
-| Pelagics     |        |        | m      |                          |
-| \<30cm       |        |        | onthly |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Catch        | **     | g m-2  | 0.25°  | Catch at sea of pelagic  |
-| Density of   | cp30to |        | grid   | species with L infinity  |
-| Medium       | 90cm** |        |        | \>=30 cm and \<90 cm     |
-| Pelagics     |        |        | m      |                          |
-| \>=30cm and  |        |        | onthly |                          |
-| \<90cm       |        |        |        |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Catch        | **cp   | g m-2  | 0.25°  | Catch at sea of pelagic  |
-| Density of   | 90cm** |        | grid   | species with L infinity  |
-| Large        |        |        |        | \>=90 cm                 |
-| Pelagics     |        |        | m      |                          |
-| \>=90cm      |        |        | onthly |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Catch        | **cd   | g m-2  | 0.25°  | Catch at sea of demersal |
-| Density of   | 30cm** |        | grid   | species with L infinity  |
-| Small        |        |        |        | \<30 cm                  |
-| Demersals    |        |        | m      |                          |
-| \<30cm       |        |        | onthly |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Catch        | **     | g m-2  | 0.25°  | Catch at sea of demersal |
-| Density of   | cd30to |        | grid   | species with L infinity  |
-| Medium       | 90cm** |        |        | \>=30 cm and \<90 cm     |
-| Demersals    |        |        | m      |                          |
-| \>=30cm and  |        |        | onthly |                          |
-| \<90cm       |        |        |        |                          |
-+--------------+--------+--------+--------+--------------------------+
-| Catch        | **cd   | g m-2  | 0.25°  | Catch at sea of demersal |
-| Density of   | 90cm** |        | grid   | species with L infinity  |
-| Large        |        |        |        | \>=90 cm                 |
-| Demersals    |        |        | m      |                          |
-| \>=90cm      |        |        | onthly |                          |
-+--------------+--------+--------+--------+--------------------------+
++--------------+--------------+-------+-------------+--------------+
+| Variable     | Va riable    | Unit  | Reso lution | Comments     |
+| long name    | spe cifier   |       |             |              |
++==============+==============+=======+=============+==============+
+| Total        | -            | g m-2 | 0.25° grid  | All          |
+| Consumer     |    \*tcb\*\* |       |             | consumers    |
+| Biomass      |              |       | m onthly    | (trophic     |
+| Density      |              |       |             | level \>1,   |
+|              |              |       |             | vertebrates  |
+|              |              |       |             | and          |
+|              |              |       |             | in           |
+|              |              |       |             | vertebrates) |
++--------------+--------------+-------+-------------+--------------+
+| Total        | **tcbl       | g m-2 | 0.25° grid  | **Level      |
+| Consumer     | og10**       |       |             | dimensio     |
+| Biomass      |              |       | m onthly    | ns:** (time, |
+| Density in   |              |       |             | bins, lat,   |
+| log10 Weight |              |       |             | lon).        |
+| Bins         |              |       |             |              |
+|              |              |       |             | If the model |
+|              |              |       |             | is           |
+|              |              |       |             | size         |
+|              |              |       |             | -structured, |
+|              |              |       |             | please       |
+|              |              |       |             | provide      |
+|              |              |       |             | biomass in   |
+|              |              |       |             | equal log 10 |
+|              |              |       |             | g weight     |
+|              |              |       |             | bins (1-10g, |
+|              |              |       |             | 10-100g,     |
+|              |              |       |             | 100g-1kg,    |
+|              |              |       |             | 1-10kg,      |
+|              |              |       |             | 10-100kg,    |
+|              |              |       |             | \>100kg)     |
++--------------+--------------+-------+-------------+--------------+
+| Total        | -            | g m-2 | 0.25° grid  | All pelagic  |
+| Pelagic      |    \*tpb\*\* |       |             | consumers    |
+| Biomass      |              |       | m onthly    | (trophic     |
+| Density      |              |       |             | level \>1,   |
+|              |              |       |             | vertebrates  |
+|              |              |       |             | and          |
+|              |              |       |             | in           |
+|              |              |       |             | vertebrates) |
++--------------+--------------+-------+-------------+--------------+
+| Total        | -            | g m-2 | 0.25° grid  | All demersal |
+| Demersal     |    \*tdb\*\* |       |             | consumers    |
+| Biomass      |              |       | m onthly    | (trophic     |
+| Density      |              |       |             | level \>1,   |
+|              |              |       |             | vertebrates  |
+|              |              |       |             | and          |
+|              |              |       |             | in           |
+|              |              |       |             | vertebrates) |
++--------------+--------------+-------+-------------+--------------+
+| Total Catch  | **tc**       | g m-2 | 0.25° grid  | Catch at sea |
+| Density (all |              |       |             | (all catch   |
+| commercial   |              |       | m onthly    | as a result  |
+| functional   |              |       |             | of all       |
+| groups /     |              |       |             | effort       |
+| size         |              |       |             | including    |
+| classes)     |              |       |             | reported and |
+|              |              |       |             | IUU) summed  |
+|              |              |       |             | for both     |
+|              |              |       |             | Industrial   |
+|              |              |       |             | and          |
+|              |              |       |             | Artisanal    |
+|              |              |       |             | sector.      |
++--------------+--------------+-------+-------------+--------------+
+| Total        | -            | g m-2 | 0.25° grid  | Catch at sea |
+| Industrial   |    \*tic\*\* |       |             | (all catch   |
+| Catch        |              |       | m onthly    | as a result  |
+| Density (all |              |       |             | of all       |
+| commercial   |              |       |             | effort       |
+| functional   |              |       |             | including    |
+| groups /     |              |       |             | reported and |
+| size         |              |       |             | IUU) for     |
+| classes)     |              |       |             | Industrial   |
+|              |              |       |             | sector only. |
++--------------+--------------+-------+-------------+--------------+
+| Total Catch  | **tcl og10** | g m-2 | 0.25° grid  | **Level      |
+| Density in   |              |       |             | dimensio     |
+| log10 Weight |              |       | m onthly    | ns:** (time, |
+| Bins across  |              |       |             | bins, lat,   |
+| both sectors |              |       |             | lon).        |
+|              |              |       |             |              |
+|              |              |       |             | If the model |
+|              |              |       |             | is           |
+|              |              |       |             | size         |
+|              |              |       |             | -structured, |
+|              |              |       |             | please       |
+|              |              |       |             | provide      |
+|              |              |       |             | biomass in   |
+|              |              |       |             | equal log 10 |
+|              |              |       |             | g weight     |
+|              |              |       |             | bins (1-10g, |
+|              |              |       |             | 10-100g,     |
+|              |              |       |             | 100g-1kg,    |
+|              |              |       |             | 1-10kg,      |
+|              |              |       |             | 10-100kg,    |
+|              |              |       |             | \>100kg)     |
++--------------+--------------+-------+-------------+--------------+
+| Total        | -            | g m-2 | 0.25° grid  | Catch at sea |
+| Pelagic      |    \*tpc\*\* |       |             | of all       |
+| Density      |              |       | m onthly    | pelagic      |
+| Catch across |              |       |             | consumers    |
+| Artisanal    |              |       |             | (trophic     |
+| and          |              |       |             | level \>1,   |
+| Industrial   |              |       |             | vertebrates  |
+| sectors      |              |       |             | and          |
+|              |              |       |             | in           |
+|              |              |       |             | vertebrates) |
++--------------+--------------+-------+-------------+--------------+
+| Total        | -            | g m-2 | 0.25° grid  | Catch at sea |
+| Demersal     |    \*tdc\*\* |       |             | of all       |
+| Catch        |              |       | m onthly    | demersal     |
+| Density      |              |       |             | consumers    |
+| across       |              |       |             | (trophic     |
+| Artisanal    |              |       |             | level \>1,   |
+| and          |              |       |             | vertebrates  |
+| Industrial   |              |       |             | and          |
+| sectors      |              |       |             | in           |
+|              |              |       |             | vertebrates) |
++--------------+--------------+-------+-------------+--------------+
+| **Optional   |              |       |             |              |
+| output from  |              |       |             |              |
+| global and   |              |       |             |              |
+| regional     |              |       |             |              |
+| models. All  |              |       |             |              |
+| biomasses    |              |       |             |              |
+| are in wet   |              |       |             |              |
+| weight, not  |              |       |             |              |
+| g C.**       |              |       |             |              |
++--------------+--------------+-------+-------------+--------------+
+| Biomass      | **bp 30cm**  | g m-2 | 0.25° grid  | If a pelagic |
+| Density of   |              |       |             | species and  |
+| Small        |              |       | m onthly    | L infinity   |
+| Pelagics     |              |       |             | is \<30 cm,  |
+| \<30cm       |              |       |             | include in   |
+|              |              |       |             | this         |
+|              |              |       |             | variable     |
++--------------+--------------+-------+-------------+--------------+
+| Biomass      | **bp30to     | g m-2 | 0.25° grid  | If a pelagic |
+| Density of   | 90cm**       |       |             | species and  |
+| Medium       |              |       | m onthly    | L infinity   |
+| Pelagics     |              |       |             | is \>=30 cm  |
+| \>=30cm and  |              |       |             | and \<90cm,  |
+| \<90cm       |              |       |             | include in   |
+|              |              |       |             | this         |
+|              |              |       |             | variable     |
++--------------+--------------+-------+-------------+--------------+
+| Biomass      | **bp 90cm**  | g m-2 | 0.25° grid  | If a pelagic |
+| Density of   |              |       |             | species and  |
+| Large        |              |       | m onthly    | L infinity   |
+| Pelagics     |              |       |             | is \>=90cm,  |
+| \>=90cm      |              |       |             | include in   |
+|              |              |       |             | this         |
+|              |              |       |             | variable     |
++--------------+--------------+-------+-------------+--------------+
+| Biomass      | **bd 30cm**  | g m-2 | 0.25° grid  | If a         |
+| Density of   |              |       |             | demersal     |
+| Small        |              |       | m onthly    | species and  |
+| Demersals    |              |       |             | L infinity   |
+| \<30cm       |              |       |             | is \<30 cm,  |
+|              |              |       |             | include in   |
+|              |              |       |             | this         |
+|              |              |       |             | variable     |
++--------------+--------------+-------+-------------+--------------+
+| Biomass      | **bd30to     | g m-2 | 0.25° grid  | If a         |
+| Density of   | 90cm**       |       |             | demersal     |
+| Medium       |              |       | m onthly    | species and  |
+| Demersals    |              |       |             | L infinity   |
+| \>=30cm and  |              |       |             | is \>=30 cm  |
+| \<90cm       |              |       |             | and \<90cm,  |
+|              |              |       |             | include in   |
+|              |              |       |             | this         |
+|              |              |       |             | variable     |
++--------------+--------------+-------+-------------+--------------+
+| Biomass      | **bd 90cm**  | g m-2 | 0.25° grid  | If a         |
+| Density of   |              |       |             | demersal     |
+| Large        |              |       | m onthly    | species and  |
+| Demersals    |              |       |             | L infinity   |
+| \>=90cm      |              |       |             | is \>=90cm,  |
+|              |              |       |             | include in   |
+|              |              |       |             | this         |
+|              |              |       |             | variable     |
++--------------+--------------+-------+-------------+--------------+
+| Catch        | **cp 30cm**  | g m-2 | 0.25° grid  | Catch at sea |
+| Density of   |              |       |             | of pelagic   |
+| Small        |              |       | m onthly    | species with |
+| Pelagics     |              |       |             | L infinity   |
+| \<30cm       |              |       |             | \<30 cm      |
++--------------+--------------+-------+-------------+--------------+
+| Catch        | **cp30to     | g m-2 | 0.25° grid  | Catch at sea |
+| Density of   | 90cm**       |       |             | of pelagic   |
+| Medium       |              |       | m onthly    | species with |
+| Pelagics     |              |       |             | L infinity   |
+| \>=30cm and  |              |       |             | \>=30 cm and |
+| \<90cm       |              |       |             | \<90 cm      |
++--------------+--------------+-------+-------------+--------------+
+| Catch        | **cp 90cm**  | g m-2 | 0.25° grid  | Catch at sea |
+| Density of   |              |       |             | of pelagic   |
+| Large        |              |       | m onthly    | species with |
+| Pelagics     |              |       |             | L infinity   |
+| \>=90cm      |              |       |             | \>=90 cm     |
++--------------+--------------+-------+-------------+--------------+
+| Catch        | **cd 30cm**  | g m-2 | 0.25° grid  | Catch at sea |
+| Density of   |              |       |             | of demersal  |
+| Small        |              |       | m onthly    | species with |
+| Demersals    |              |       |             | L infinity   |
+| \<30cm       |              |       |             | \<30 cm      |
++--------------+--------------+-------+-------------+--------------+
+| Catch        | **cd30to     | g m-2 | 0.25° grid  | Catch at sea |
+| Density of   | 90cm**       |       |             | of demersal  |
+| Medium       |              |       | m onthly    | species with |
+| Demersals    |              |       |             | L infinity   |
+| \>=30cm and  |              |       |             | \>=30 cm and |
+| \<90cm       |              |       |             | \<90 cm      |
++--------------+--------------+-------+-------------+--------------+
+| Catch        | **cd 90cm**  | g m-2 | 0.25° grid  | Catch at sea |
+| Density of   |              |       |             | of demersal  |
+| Large        |              |       | m onthly    | species with |
+| Demersals    |              |       |             | L infinity   |
+| \>=90cm      |              |       |             | \>=90 cm     |
++--------------+--------------+-------+-------------+--------------+
 
 ## Additional notes for Regional FishMIP Models {#additional-notes-for-regional-fishmip-models}
 
