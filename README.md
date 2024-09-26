@@ -1,5 +1,5 @@
 
-# FishMIP 2.0: ISIMIP3b Phase 2 Protocol
+# FishMIP 2.0: Ocean System Pathways Protocol
 
 ### <u>Contents</u>
 
@@ -50,15 +50,16 @@ inclusion in the IPCC 6th Assessment (Tittensor et al. 2021). The
 historical component also contributes to FishMIP 2.0’s ISIMIP 3a
 protocol on [“Model Evaluation, Detection, and
 Attribution”](https://github.com/Fish-MIP/FishMIP2.0_TrackA_ISIMIP3a)
-(Blanchard et al. 2024, Frieler et al. 2023.
+(Blanchard et al. 2024, Frieler et al. 2023).
 
 Timelines for simulations: TO BE DISCUSSED
 
-| Scenarios                     | Models           | Date |
-|-------------------------------|------------------|------|
-| Historical (See Table X)      | global, regional | TBD  |
-| OSPs (See Table X)            | global, regional | TBD  |
-| Additional runs (See Table X) | global           |      |
+| Scenarios                                     | Models           | Date      |
+|-----------------------------------------------|------------------|-----------|
+| OSP-Baseline (Table 1)                        | global, regional | 2025-2026 |
+| OSP-Future (See Table 2)                      | global, regional | 2025-2026 |
+| OSP-Fisheries and Food Security (See Table 3) | global, regional | TBD       |
+| OSP-Nature Future Framework(See Table 4)      | global, regional | TBD       |
 
 To aid with progress we will hold specific technical workshops to:
 
@@ -78,9 +79,9 @@ scenarios. In Section 5 we describe the set of **outputs** to be
 created. Finally in Sections 6-7 we provide further **notes** and
 **instructions** on how to report and upload model results.
 
-This protocal is a contribution to the wider Inter-Sectoral Model
-Intercomparison Project (ISIMIP3b) simulation round, further details can
-be found here:
+This protocol is a contribution to the wider Inter-Sectoral Model
+Intercomparison Project (ISIMIP3a and ISIMIP3b) simulation rounds,
+further details can be found here:
 
 [https://protocol.isimip.org/#ISIMIP3b/marine-fishery_regional/marine-fishery_global](https://protocol.isimip.org/)
 
@@ -99,14 +100,16 @@ below text is taken from [Maury et al.
 2024.](https://essopenarchive.org/users/713515/articles/937359-the-ocean-system-pathways-osps-a-new-scenario-and-simulation-framework-to-investigate-the-future-of-the-world-fisheries)
 
 **A. OSP-baseline:** This is designed to initialise and evaluate the
-MEM-PIM simulation framework against available data. It also seeks to
-identify and disentangle the respective roles of climate and
-socio-economic factors in the historical evolution of marine ecosystems
-and fisheries. It includes components corresponding to the **ISIMIP3a**
-(e.g. the Realistic-baseline) and the **ISIMIP3b** (e.g. the Spin-up,
-Reference, Historical) protocols. Prior to the below simulation runs, a
-100-year **Spin-up** of the MEMs without fishing, and using the
-pi-control climate forcing, is required.
+two-way feedback between socioeconomic demand scenarios, markets, and
+fleets developed in a new simulation framework (Maury et al. 2024) to
+model dynamic fishing effort and evaluate it against available data. It
+also seeks to identify and disentangle the respective roles of climate
+and socio-economic factors in the historical evolution of marine
+ecosystems and fisheries. It includes components corresponding to the
+**ISIMIP3a** (e.g. the Realistic-baseline) and the **ISIMIP3b** (e.g.
+the Spin-up, Reference, Historical) protocols. Prior to the below
+simulation runs, a 100-year **Spin-up** of the MEMs without fishing, and
+using the pi-control climate forcing, is required.
 
 - A 1850-2100 **Reference** simulation (without fishing and without
   climate change), following the spin-up and using the pi-control
@@ -132,7 +135,7 @@ pi-control climate forcing, is required.
   1958-2022 OSP drivers based on observed GDP and population. This
   simulation branches off from the Historical-after 1957. 
 
-The Realistic-baseline simulation will be used to evaluate the
+The realistic-baseline simulation will be used to evaluate the
 simulation framework against fishery catches (FAO, 2020, 2024a),
 reconstructed fishing effort (Rousseau et al., 2024) and observed prices
 (FAO, 2024b). 
@@ -156,6 +159,90 @@ between the Historical-a and the Historical-c simulations will allow the
 identification of climate change impacts on the coupled
 social-ecological fishery system. 
 
+##### Table 1: OSP-Baseline simulations. Control run and historical simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
+
+<table style="width:90%;">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>No.</th>
+<th>Simulation</th>
+<th>Short d escription</th>
+<th>T ime-period and specifiers</th>
+<th>Priority level</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Pre- industrial control</strong></td>
+<td><p><strong> Climate</strong>: No climate change, fixed 1850s
+CO<sub><code>2</code></sub> levels</p>
+<p><strong> Fishing</strong>: No fishing</p></td>
+<td><p>1850-2100</p>
+<p>picontrol</p>
+<p>nat</p></td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong> Historical fishing dynamics, no climate</strong></td>
+<td><p><strong> Climate</strong>: No climate change, fixed 1850s
+CO<sub><code>2</code></sub> levels</p>
+<p><strong> Fishing</strong>: Historical fishing dynamics, forced by OSP
+drivers</p></td>
+<td><p>1850-2014</p>
+<p>picontrol</p>
+<p>histsoc</p></td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong> Historical climate only</strong></td>
+<td><p><strong> Climate</strong>: Simul ated<strong>/rea
+nalysis?</strong> historical climate change</p>
+<p><strong> Fishing</strong>: No fishing</p></td>
+<td><p>1850-2014</p>
+<p>reanalyis</p>
+<p>nat</p></td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong> Historical climate and fishing dynamics</strong></td>
+<td><p><strong> Climate</strong>: Simulat ed<strong>/rea
+nalysis?</strong> historical climate change</p>
+<p><strong> Fishing</strong>: Historical fishing dynamics, forced by OSP
+drivers</p></td>
+<td><p>1850-2014</p>
+<p>reanalyis</p>
+<p>histsoc</p></td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Realistic</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+#### Note on spin-up period (pre-1850)
+
+For fishing effort prior to 1850 hold fishing at 1850 levels. \[need to
+DISCUSS above states no fishing, this is from 3a\]  
+  
+For the ‘no fishing’ runs (nat), the spin-up should not use any fishing
+effort.  
+
 **B. OSP-future**: This second thread is dedicated to carrying out
 scenario simulations from the perspective of the IPCC. The aim is to
 estimate the impact of climate change and the socio-economic context on
@@ -163,19 +250,19 @@ marine ecosystems, fisheries and the benefits they provide to societies
 worldwide. It contributes to ISIMIP3b, which focuses on assessing the
 climate change impacts, and involves running:
 
-● Scenario-a: The five OSP scenarios (2015-2100) with fishing and SSP
-climate change, starting from the Historical-a simulation. This
+<u>Scenario-a</u>: The five OSP scenarios (2015-2100) with fishing and
+SSP climate change, starting from the Historical-a simulation. This
 simulation is designed to simulate the impacts of climate change on
 fishery and food consumption in the different socio-economic OSP
 contexts.
 
-● Scenario-b: The five OSP scenarios (2015-2100) without fishing but
-with SSP climate change, starting from the Historical-b simulation. This
-simulation is designed to simulate the impacts of different levels of
-future climate change on marine ecosystems.
+<u>Scenario-b</u>: The five OSP scenarios (2015-2100) without fishing
+but with SSP climate change, starting from the Historical-b simulation.
+This simulation is designed to simulate the impacts of different levels
+of future climate change on marine ecosystems.
 
-● Scenario-c: The five OSP scenarios (2015-2100) with fishing but no
-climate change (pi-control climate), starting from the Historical-c
+<u>Scenario-c</u>: The five OSP scenarios (2015-2100) with fishing but
+no climate change (pi-control climate), starting from the Historical-c
 simulation. This simulation is designed to highlight the effects of the
 various socio-economic OSP contexts on fisheries.
 
@@ -200,16 +287,76 @@ difference between the Scenario-a and the Scenario-c simulations will
 allow the identification of climate change impacts on the coupled
 social-ecological fishery system. 
 
+##### Table 2: OSP-Future simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
+
+<table style="width:90%;">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>No.</th>
+<th>Simulation</th>
+<th>Short d escription</th>
+<th>Time period and specifiers</th>
+<th>Phase</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1-5</td>
+<td><strong>All SSPs (1-5), no climate change, OSP1
+fishing</strong></td>
+<td><p><strong> Climate</strong>: No climate change</p>
+<p><strong> Fishing</strong>: OSP1-5 future fisheries dynamics
+(following on from historical OSP)</p></td>
+<td><p>2015-2100</p>
+<p>picontrol</p>
+<p>osp1soc</p></td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>6-10</td>
+<td><strong>All SSPs with climate change (SSP1-2.6, SSP5-8.5), no
+fishing</strong> |</td>
+<td><p><strong> Climate</strong>: SSP-RCP climate scenarios (e.g.
+SSP1-2.6, SSP5-8.5)</p>
+<p><strong> Fishing</strong>: No fishing</p></td>
+<td>2015-2100 ssp &lt;scen&gt; nat</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>11-15</td>
+<td><strong>All SSPs with climate change (SSP1-2.6, SSP5-8.5) and OSP1-5
+fishing</strong></td>
+<td><p><strong> Climate</strong>: SSP-RCP climate scenario, (e.g.
+SSP1-2.6, SSP5-8.5)</p>
+<p><strong> Fishing</strong>: OSP1-5 future fisheries dynamics (matched
+to each SSP, e.g. SSP1RCP2.6 would use OSP1)</p></td>
+<td><p>2015-2100</p>
+<p>ssp &lt;scen&gt;</p>
+<p>o sp&lt;x&gt;soc</p></td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+
+### The following additional policy-targeted experimental sensitivity runs will be updated in due course.
+
 **C. OSP-management & food security:** This third thread is devoted to
 scenario simulations from the FAO perspective. It aims to focus on the
 effects of fishery management on food security, in the “conventional
 trends” context of OSP2. It involves running:
 
-● The OSP2 scenario (2023-2100) with fishing, no management, and climate
-change (RCP4.5).
+The OSP2 scenario (2023-2100) with fishing, <u>no management,</u> and
+climate change (RCP4.5).
 
-● The OSP2 scenario (2023-2100) with fishing, fully compliant MSY
-management, and climate change (RCP4.5).
+The OSP2 scenario (2023-2100) with fishing, <u>fully compliant MSY
+management</u>, and climate change (RCP4.5).
 
 Comparing these two simulations with the OSP2 Scenario-a simulation
 (with present-day management) will provide insights into the risks of
@@ -226,234 +373,27 @@ Pereira et al., 2020; Kim et al., 2023). While the definitive setup of
 this set of simulations has not yet been fully determined, it would
 involve running:
 
-● The OSP1 scenario (2023-2100) with fishing, management transitioning
-to 50% of the ocean in fully protected MPAs, and moderate climate change
-(SSP1-2.6). This simulation corresponds to the IPBES NFF “Nature for
-Nature” pathway.
+The OSP1 scenario (2023-2100) with fishing, <u>management transitioning
+to 50% of the ocean in fully protected MPAs</u>, and moderate climate
+change (SSP1-2.6). This simulation corresponds to the IPBES NFF “Nature
+for Nature” pathway.
 
-● The OSP1 scenario (2023-2100) with fishing, artisanal fisheries
-managed at MSY and no industrial fisheries, and moderate climate change
-(SSP1-2.6). This simulation corresponds to the IPBES NFF “Nature as
-Culture” pathway.
+The OSP1 scenario (2023-2100) with fishing, <u>artisanal fisheries
+managed at MSY and no industrial fisheries</u>, and moderate climate
+change (SSP1-2.6). This simulation corresponds to the IPBES NFF “Nature
+as Culture” pathway.
 
-● The OSP1 scenario (2023-2100) with fishing, the management of both
-artisanal and industrial fisheries at Maximum Economic Yield (MEY), and
-moderate climate change (SSP1-2.6). This simulation corresponds to the
-IPBES NFF “Nature for Society” pathway.
+The OSP1 scenario (2023-2100) with fishing, <u>the management of both
+artisanal and industrial fisheries at Maximum Economic Yield (MEY)</u>,
+and moderate climate change (SSP1-2.6). This simulation corresponds to
+the IPBES NFF “Nature for Society” pathway.
 
 Comparing these three simulations will bring insights into the
 performances of the three NFF strategies, in terms of food supply,
 biodiversity conservation, employment and economic benefits generated in
 the context of the OSP1 mild climate change. 
 
-##### Table 1: OSP-Baseline simulations. Control run and historical simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
-
-<table style="width:96%;">
-<colgroup>
-<col style="width: 8%" />
-<col style="width: 21%" />
-<col style="width: 21%" />
-<col style="width: 21%" />
-<col style="width: 21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>No.</th>
-<th>S imulation</th>
-<th>Short description</th>
-<th>Time period and s pecifiers</th>
-<th>Phase</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td><strong>Pre-i ndustrial control</strong></td>
-<td><p><strong>Climate</strong>: No climate change, fixed 1850s
-CO<sub><code>2</code></sub> levels</p>
-<p><strong>Fishing</strong>: No fishing</p></td>
-<td><p>1850-2100</p>
-<p>picontrol</p>
-<p>nat</p></td>
-<td>1 (optional re-runs only)</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td><strong>H istorical fishing effort, no climate</strong></td>
-<td><p><strong>Climate</strong>: No climate change, fixed 1850s
-CO<sub><code>2</code></sub> levels</p>
-<p><strong>Fishing</strong>: Historical fishing effort, forced directly
-by effort data</p></td>
-<td><p>1850-2014</p>
-<p>picontrol</p>
-<p>histsoc</p></td>
-<td>1 (optional re-runs only)</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td><strong>H istorical fishing dynamics, no climate</strong></td>
-<td><p><strong>Climate</strong>: No climate change, fixed 1850s
-CO<sub><code>2</code></sub> levels</p>
-<p><strong>Fishing</strong>: Historical fishing dynamics, forced by OSP
-drivers</p></td>
-<td><p>1850-2014</p>
-<p>picontrol</p>
-<p>h istsocOSP</p></td>
-<td>2 ( priority)</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td><strong>H istorical climate only</strong></td>
-<td><p><strong>Climate</strong>: Simulat ed<strong>/
-reanalysis?</strong> historical climate change</p>
-<p><strong>Fishing</strong>: No fishing</p></td>
-<td><p>1850-2014</p>
-<p>reanalyis</p>
-<p>nat</p></td>
-<td>1 (optional re-runs only)</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td><strong>H istorical climate and fishing effort</strong></td>
-<td><p><strong>Climate</strong>: Simulat ed<strong>/
-reanalysis?</strong> historical climate change</p>
-<p><strong>Fishing</strong>: Historical fishing effort, forced directly
-by effort data</p></td>
-<td><p>1850-2014</p>
-<p>reanalyis</p>
-<p>histsoc</p></td>
-<td>1 (optional re-runs only)</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td><strong>H istorical climate and fishing d ynamics</strong></td>
-<td><p><strong>Climate</strong>: Simulat ed<strong>/
-reanalysis?</strong> historical climate change</p>
-<p><strong>Fishing</strong>: Historical fishing dynamics, forced by OSP
-drivers</p></td>
-<td><p>1850-2014</p>
-<p>reanalyis</p>
-<p>histOSP</p></td>
-<td>2 ( priority)</td>
-</tr>
-</tbody>
-</table>
-
-#### Note on spin-up period (pre-1850)
-
-For fishing effort prior to 1850 hold fishing at 1850 levels.  
-  
-For the ‘no fishing’ runs (nat), the spin-up should not use any fishing
-effort.  
-
-##### Table 2: OSP-Future simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
-
-<table style="width:94%;">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>No.</th>
-<th>Simulation</th>
-<th>Short description</th>
-<th>Time period and sp ecifiers</th>
-<th>Phase</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1-5</td>
-<td><strong>All SSPs (1-5), no climate change, OSP1-5
-fishing</strong></td>
-<td><p><strong>Climate</strong>: No climate change</p>
-<p><strong>Fishing</strong>: OSP1-5 future fisheries dynamics (following
-on from historical OSP)</p></td>
-<td><p>2 015-2100</p>
-<p>p icontrol</p>
-<p>OSP1soc</p></td>
-<td>2, priority</td>
-</tr>
-<tr class="even">
-<td>6-10</td>
-<td><strong>All SSPs with climate change (SSP1-2.6, SSP5-8.5) , no
-fishing</strong> |</td>
-<td><p><strong>Climate</strong>: SSP-RCP climate scenarios (e.g.
-SSP1-2.6, SSP5-8.5)</p>
-<p><strong>Fishing</strong>: No fishing</p></td>
-<td>2 015-2100 ssp &lt;scen&gt; nat</td>
-<td>1 ( optional re-runs only)</td>
-</tr>
-<tr class="odd">
-<td>11-15</td>
-<td><strong>All SSPs with climate change (SSP1-2.6, SSP5-8.5) and OSP
-fishing</strong></td>
-<td><p><strong>Climate</strong>: SSP-RCP climate scenario, (e.g.
-SSP1-2.6, SSP5-8.5)</p>
-<p><strong>Fishing</strong>: OSP1-5 future fisheries dynamics (matched
-to each SSP, e.g. SSP1RCP2.6 would use OSP1)</p></td>
-<td><p>2 015-2100</p>
-<p>ssp &lt;scen&gt;</p>
-<p>OSP &lt;x&gt;soc</p></td>
-<td>2 priority</td>
-</tr>
-</tbody>
-</table>
-
-#### Additional policy experimental sensitivity tests under threads C and D will be updated in due course.
-
-The above runs will allow us to provide IPCC advice regarding key risks
-under climate change. We will add additional runs later in the timeline.
-
-##### Table 2: OSP-policy simulation experimental set-up. Note that each simulation is specified by the Climate forcing and Fishing forcing. Definitions of the specifiers (e.g. nat, picontrol etc.) that are used for ISIMIP filenaming are provided in Tables 3 and 4 below.
-
-<table style="width:96%;">
-<colgroup>
-<col style="width: 8%" />
-<col style="width: 22%" />
-<col style="width: 22%" />
-<col style="width: 22%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>No.</th>
-<th>Simulation</th>
-<th>Short description</th>
-<th>Time period and spe cifiers</th>
-<th>Phase</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td><strong>SSP2-4.5 with climate change and OSP2 fishing, but &lt;NO M
-ANAGEMENT&gt;</strong></td>
-<td><p><strong>Climate</strong>: SSP-RCP climate scenario</p>
-<p><strong>Fishing</strong>: OSP2- future fisheries dynamics but with
-MANAGEMENT switched off</p></td>
-<td><p>20 15-2100 ssp245</p>
-<p>OSP2soc</p></td>
-<td>3, o ptional</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>SSP2-RCP4.5 with climate change and OSP2 fishing, but &lt;NO
-MPAS&gt;</strong></td>
-<td><p><strong>Climate</strong>: SSP-RCP climate scenario <strong>
-SSP2-RCP4.5</strong></p>
-<p><strong>Fishing</strong>: OSP2- future fisheries dynamics but with
-MPAs switched off</p></td>
-<td><p>20 15-2100 ssp245</p>
-<p>OSP2soc _noMPAS</p></td>
-<td>3, o ptional</td>
-</tr>
-</tbody>
-</table>
+##### 
 
 #### Scenario definitions
 
@@ -474,11 +414,10 @@ model results).
 
 ##### Table 3: Climate scenario specifiers (climate-scenario).
 
-<table style="width:85%;">
+<table>
 <colgroup>
-<col style="width: 34%" />
-<col style="width: 44%" />
-<col style="width: 5%" />
+<col style="width: 25%" />
+<col style="width: 74%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -487,49 +426,42 @@ model results).
 <td><p><strong>Description</strong></p>
 <p>Pre-industrial climate as simulated by the Earth System Models
 (ESMs)</p></td>
-<td></td>
 </tr>
 <tr class="even">
 <td>historical</td>
 <td>Historical climate as simulated by the ESMs, starting in 1950.</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td>ssp126</td>
-<td>SSP1-2.6 climate as simulated by the ESMs |</td>
-<td></td>
+<td>SSP1-2.6 climate as simulated by the ESMs</td>
 </tr>
 <tr class="even">
 <td>ssp245</td>
-<td>SSP2-4.5 climate as simulated by the ESMs. |</td>
-<td></td>
+<td>SSP2-4.5 climate as simulated by the ESMs.</td>
 </tr>
 <tr class="odd">
 <td>ssp370</td>
 <td>SSP3-7.0 climate as simulated by the ESMs.</td>
-<td></td>
 </tr>
 <tr class="even">
 <td>ssp460</td>
 <td>SSP4-6.0 climate as simulated by the ESMs.</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td>ssp585</td>
 <td>SSP5-8.5 climate as simulated by the ESMs.</td>
-<td></td>
 </tr>
 </tbody>
 </table>
 
 ##### Table 4: Socio-economic scenario specifiers (soc-scenario).
 
-| **Scenario specifier** | **Description**                                                                                                     |
-|:-----------------------|:--------------------------------------------------------------------------------------------------------------------|
-| **histsoc**            | Varying direct human influences in the historical period (1850-2014) (i.e. historical estimates of fishing effort). |
-| **2015soc**            | Fixed year-2015 direct human influences (i.e. fishing effort).                                                      |
-| **O SP\<x\>soc**       | Future fishing determined by SSP and OSP driver forcings for OSP\<x\>, where \<x\> is 1-5.                          |
-| **nat**                | No fishing (naturalized run).                                                                                       |
+| **Scenario specifier** | **Description**                                                                                                      |
+|:-----------------------|:---------------------------------------------------------------------------------------------------------------------|
+| **histsoc**            | Varying direct human influences in the historical period (1850-2014) (i.e. historical estimates of fishing drivers). |
+| **2015soc**            | Fixed year-2015 direct human influences (i.e. fishing effort).                                                       |
+| **o sp\<x\>soc**       | Future fishing determined by SSP and OSP driver forcings for OSP\<x\>, where \<x\> is 1-5.                           |
+| **nat**                | No fishing (naturalized run).                                                                                        |
 
 **Please remember to use these same specifiers in your output files.
 More on reporting data can be found at the end of this document.**
@@ -553,27 +485,27 @@ follow the instructions here:
 
 ##### Table 6. Climate forcing variables and units for FishMIP 3a simulations. All variables are available on a 0.25 and 1 degree horizontal grid, monthly and annual resolutions. Note: Some variables are available as specific layers extracted from vertically resolved data. Their variable names have been suffixed with -bot (ocean bottom, e.g. o2-bot), -surf (surface values, e.g. pH-surf) or -vint (vertically integrated, e.g. phyc-vint), respectively, or prefixed with int (vertically integrated, e.g. intpp). Temperature is suffixed with b or s for bottom (e.g. tob) or surface (e.g. tos) layers, respectively.
 
-<table style="width:96%;">
+<table style="width:90%;">
 <colgroup>
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Variable</th>
-<th>Sp ecifier</th>
+<th>Specifier</th>
 <th>Unit</th>
-<th>Res olution</th>
-<th>ESM d atasets</th>
+<th>Resolution</th>
+<th>ESM datasets</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Mass Co ncentration of Total Ph ytoplankton Expressed as
-Chlorophyll</td>
+<td>Mass Con centration of Total Phy toplankton Expressed as C
+hlorophyll</td>
 <td><strong>chl</strong></td>
 <td>kg m-3</td>
 <td>0.25° , 1° grid</td>
@@ -581,7 +513,7 @@ Chlorophyll</td>
 </tr>
 <tr class="even">
 <td>Sea Floor Depth</td>
-<td>*dep tho**</td>
+<td><strong>deptho</strong></td>
 <td>m</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
@@ -595,14 +527,14 @@ Chlorophyll</td>
 </tr>
 <tr class="even">
 <td>P articulate Organic Carbon Content</td>
-<td>* int poc**</td>
+<td>* intpoc**</td>
 <td>kg m-2</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Primary Organic Carbon Production by All Types of Ph
-ytoplankton</td>
+<td>Primary Organic Carbon Production by All Types of Phy
+toplankton</td>
 <td><strong>intpp</strong></td>
 <td>mol m-2 s-1</td>
 <td>0.25° , 1° grid</td>
@@ -616,14 +548,14 @@ ytoplankton</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Net Primary Mole P roductivity of Carbon by Diazotrophs</td>
+<td>Net Primary Mole Pr oductivity of Carbon by D iazotrophs</td>
 <td><strong>intp pdiaz</strong></td>
 <td>mol m-2 s-1</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Net Primary Mole P roductivity of Carbon by Picoph ytoplankton</td>
+<td>Net Primary Mole Pr oductivity of Carbon by Picoph y toplankton</td>
 <td><strong>intp ppico</strong></td>
 <td>mol m-2 s-1</td>
 <td>0.25° , 1° grid</td>
@@ -631,15 +563,13 @@ ytoplankton</td>
 </tr>
 <tr class="odd">
 <td>Maximum Ocean Mixed Layer Thickness Defined by Sigma T</td>
-<td><p><br />
-*mlotst</p>
-<p>-0 125**</p></td>
+<td><strong>mlotst</strong></td>
 <td>m</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Dissolved Oxygen Co ncentration</td>
+<td>Dissolved Oxygen Con centration</td>
 <td><p><strong>o2,</strong></p>
 <p><strong>o 2-bot</strong></p>
 <p><strong>o2 -surf</strong></p></td>
@@ -652,7 +582,7 @@ ytoplankton</td>
 <tr class="odd">
 <td>pH</td>
 <td><p><strong>ph</strong></p>
-<p><strong>p h-bot</strong></p>
+<p><strong>ph-bot</strong></p>
 <p><strong>ph -surf</strong></p></td>
 <td><p>1</p>
 <p>1</p>
@@ -661,8 +591,8 @@ ytoplankton</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Ph ytoplankton Carbon Co ncentration</td>
-<td><p>*p hyc**</p>
+<td>Phy toplankton Carbon Co n centration</td>
+<td><p><strong>phyc</strong></p>
 <p><strong>phyc -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
@@ -670,8 +600,10 @@ ytoplankton</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Mole Co ncentration of Diatoms expressed as Carbon in sea water</td>
-<td><p><strong>ph ydiat</strong></p>
+<td>Mole Con centration of Diatoms expressed as Carbon in sea water</td>
+<td><ul>
+<li>*phydiat**</li>
+</ul>
 <p><strong>phydiat -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
@@ -679,9 +611,11 @@ ytoplankton</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Mole Co ncentration of Diazotrophs Expressed as Carbon in Sea
+<td>Mole Con centration of D iazotrophs Expressed as Carbon in Sea
 Water</td>
-<td><p><strong>ph ydiaz</strong></p>
+<td><ul>
+<li>*phydiaz**</li>
+</ul>
 <p><strong>phydiaz -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
@@ -689,9 +623,11 @@ Water</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Mole Co ncentration of Picoph ytoplankton Expressed as Carbon in Sea
+<td>Mole Con centration of Picoph ytoplankto nExpressed as Carbon in Sea
 Water</td>
-<td><p><strong>ph ypico</strong></p>
+<td><ul>
+<li>*phypico**</li>
+</ul>
 <p><strong>phypico -vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
@@ -701,15 +637,17 @@ Water</td>
 <tr class="even">
 <td>Sea Water Salinity</td>
 <td><p><strong>so</strong></p>
-<p><strong>s o-bot</strong></p>
+<p><strong>so-bot</strong></p>
 <p><strong>so -surf</strong></p></td>
-<td>‰ | 0.25° , 1° grid | GFDL, IPSL | | ‰ | | | | | % | |</td>
-<td></td>
-<td></td>
+<td><p>‰</p>
+<p>‰</p>
+<p>%</p></td>
+<td>0.25° , 1° grid</td>
+<td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Sea Water Potential Temperature</td>
-<td><strong>t hetao</strong></td>
+<td>Sea Water Potential T emperature</td>
+<td><strong>thetao</strong></td>
 <td>°C</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
@@ -722,14 +660,14 @@ Water</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Sea Water Potential Temperature at Sea Floor</td>
+<td>Sea Water Potential T emperature at Sea Floor</td>
 <td><strong>tob</strong></td>
 <td>°C</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Sea Surface Temperature</td>
+<td>Sea Surface T emperature</td>
 <td><strong>tos</strong></td>
 <td>°C</td>
 <td>0.25° , 1° grid</td>
@@ -750,31 +688,29 @@ Water</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Mole Co ncentration of Meso zooplankton expressed as Carbon in sea
+<td>Mole Con centration of Meso z ooplankton expressed as Carbon in sea
 water</td>
 <td><p><strong>zmeso</strong></p>
-<p><strong>zmeso -vint</strong></p></td>
+<p><strong>zm eso-vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="even">
-<td>Mole Co ncentration of Micro zooplankton expressed as Carbon in sea
+<td>Mole Con centration of Microz ooplankton expressed as Carbon in sea
 water</td>
-<td><p><strong>z micro</strong></p>
-<p><br />
-*zmicro</p>
-<p>-v int**</p></td>
+<td><p><strong>zmicro</strong></p>
+<p><strong>zmi cro-vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
-<td>Zooplankton Carbon Co ncentration</td>
-<td><p>*z ooc**</p>
-<p><strong>zooc -vint</strong></p></td>
+<td>Z ooplankton Carbon Con centration</td>
+<td><p><strong>zooc</strong></p>
+<p><strong>z ooc-vint</strong></p></td>
 <td><p>mol m-3</p>
 <p>mol m-2</p></td>
 <td>0.25° , 1° grid</td>
@@ -782,14 +718,14 @@ water</td>
 </tr>
 <tr class="even">
 <td>Net Downward Shortwave Radiation at Sea Water Surface</td>
-<td><strong>r sntds</strong></td>
+<td><strong>rsntds</strong></td>
 <td>W m-2</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
 </tr>
 <tr class="odd">
 <td>Sea Ice Area Fraction</td>
-<td><strong>s iconc</strong></td>
+<td><strong>siconc</strong></td>
 <td>%</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL, IPSL</td>
@@ -833,124 +769,92 @@ ISIMIP web-based [data portal](https://data.isimip.org/).
 A simple worked example on how to do this for specific regions in R is
 provided here: <https://github.com/Fish-MIP/FishMIP_extracting-data>
 
-### Fishing effort forcing - NEEDS TO BE UPDATED - OSPs
+### Fishing and socioeconomic drivers - NEEDS TO BE UPDATED - OSPs
 
-##### Table 7: Fishing effort forcing files and variables for FishMIP 3b simulations.
+##### Table 7: Fishing effort data and variables.
 
-<table style="width:92%;">
+<table style="width:93%;">
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 26%" />
+<col style="width: 22%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Spe cifier</th>
+<th>Specifier</th>
 <th>Included variables (short names) and definitions</th>
-<th>Time period /Reso lution</th>
-<th>Fi lename</th>
+<th>Time period /Resolution</th>
+<th>Filename</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>h istsoc</td>
-<td><p>NomActive = Nominal fishing effort of the active fleet
-dis-aggregated by:</p>
+<td>histsoc</td>
+<td><p>NomActive = Nominal fishing effort of the active fleet d
+is-aggregated by:</p>
 <ul>
-<li><p>e ez_country_name = The exclusive economic zone/high seas name in
+<li><p>eez _country_name = The exclusive economic zone/high seas name in
 which fishing effort is occurring</p></li>
 <li><p>LME = A number code of the Large Marine ecosystem in which the
 Effort is occurring</p></li>
 <li><p>SAUP = A number code for the fishing country, following Sea
 Around Us numbering</p></li>
 <li><p>Gear = the fishing gear</p></li>
-<li><p>FGroup = the targeted functional group</p></li>
-<li><p>Sector = the fishing sector defined by the law of the
-country</p></li>
+<li><p>FGroup = the targeted</p></li>
+</ul>
+<p>functional group</p>
+<ul>
+<li>Sector = the fishing sector defined by the law of the country</li>
 </ul></td>
 <td><ul>
-<li><p>185 0-2015</p></li>
+<li><p>1850-2015</p></li>
 <li><p>Annual</p></li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>2 015soc</td>
+<td>2015soc</td>
 <td>Final year of values from histsoc repeated until 2100</td>
 <td><ul>
-<li><p>201 5-2100</p></li>
+<li><p>2015-2100</p></li>
 <li><p>Annual</p></li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>O SP1soc</td>
-<td>Which variables? Determined from % change relative to 2015 in
-SSP1Population, SSP1GDP and relative change to 2015 (drivers of?)
-fishing effort</td>
-<td><ul>
-<li><p>201 5-2100</p></li>
-<li><p>Annual</p></li>
-</ul></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>O SP2soc</td>
-<td>Which variables? Determined from % change relative to 2015 in
-SSP5Population, SSP5GDP and relative change to 2015 (drivers of?)
-fishing effort</td>
-<td><ul>
-<li><p>201 5-2100</p></li>
-<li><p>Annual</p></li>
-</ul></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Hist orical Popu lation</td>
+<td>Historical Population</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Hist orical GDP</td>
+<td>Historical GDP</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>O THERS?</td>
+<td>SSP&lt;x&gt; Population</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>SSP1 Popu lation</td>
+<td>SSP&lt;x&gt;GDP</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>S SP1GDP</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>SSP5P opu lation</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>SSP5 GDP</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
 <td>MPAs</td>
-<td>NEED TO MAKE THIS (Kelsey , Derek)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>OS P&lt;x&gt;Drivers</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -1087,39 +991,37 @@ covers the experiment period (1961-2010).
 
 <table style="width:93%;">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 11%" />
-<col style="width: 19%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
 <col style="width: 20%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Variable long name</th>
-<th>Va riable spe cifier</th>
+<th>Variable spe cifier</th>
 <th>Unit</th>
-<th>Reso lution</th>
+<th>Resolution</th>
 <th>Comments</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Total Consumer Biomass Density</td>
-<td><ul>
-<li>*tcb**</li>
-</ul></td>
+<td><strong>tcb</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
-<p>m onthly</p></td>
+<p>monthly</p></td>
 <td>All consumers (trophic level &gt;1, vertebrates and in
 vertebrates)</td>
 </tr>
 <tr class="even">
 <td>Total Consumer Biomass Density in log10 Weight Bins</td>
-<td><strong>tcbl og10</strong></td>
+<td><strong> tcblog10</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
-<p>m onthly</p></td>
+<p>monthly</p></td>
 <td><p><strong>Level dimensio ns:</strong> (time, bins, lat, lon).</p>
 <p>If the model is size -structured, please provide biomass in equal log
 10 g weight bins (1-10g, 10-100g, 100g-1kg, 1-10kg, 10-100kg,
@@ -1127,9 +1029,7 @@ vertebrates)</td>
 </tr>
 <tr class="odd">
 <td>Total Pelagic Biomass Density</td>
-<td><ul>
-<li>*tpb**</li>
-</ul></td>
+<td><strong>tpb</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1138,9 +1038,7 @@ vertebrates)</td>
 </tr>
 <tr class="even">
 <td>Total Demersal Biomass Density</td>
-<td><ul>
-<li>*tdb**</li>
-</ul></td>
+<td><strong>tdb</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1160,9 +1058,7 @@ and IUU) summed for both Industrial and Artisanal sector.</td>
 <tr class="even">
 <td>Total Industrial Catch Density (all commercial functional groups /
 size classes)</td>
-<td><ul>
-<li>*tic**</li>
-</ul></td>
+<td><strong>tic</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1171,7 +1067,9 @@ and IUU) for Industrial sector only.</td>
 </tr>
 <tr class="odd">
 <td>Total Catch Density in log10 Weight Bins across both sectors</td>
-<td><strong>tcl og10</strong></td>
+<td><ul>
+<li>*tclog10**</li>
+</ul></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1183,9 +1081,7 @@ and IUU) for Industrial sector only.</td>
 <tr class="even">
 <td>Total Pelagic Density Catch across Artisanal and Industrial
 sectors</td>
-<td><ul>
-<li>*tpc**</li>
-</ul></td>
+<td><strong>tpc</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1195,9 +1091,7 @@ vertebrates and in vertebrates)</td>
 <tr class="odd">
 <td>Total Demersal Catch Density across Artisanal and Industrial
 sectors</td>
-<td><ul>
-<li>*tdc**</li>
-</ul></td>
+<td><strong>tdc</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1214,10 +1108,10 @@ biomasses are in wet weight, not g C.</strong></td>
 </tr>
 <tr class="odd">
 <td>Biomass Density of Small Pelagics &lt;30cm</td>
-<td><strong>bp 30cm</strong></td>
+<td><strong>bp30cm</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
-<p>m onthly</p></td>
+<p>monthly</p></td>
 <td>If a pelagic species and L infinity is &lt;30 cm, include in this
 variable</td>
 </tr>
@@ -1226,22 +1120,22 @@ variable</td>
 <td><strong>bp30to 90cm</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
-<p>m onthly</p></td>
+<p>monthly</p></td>
 <td>If a pelagic species and L infinity is &gt;=30 cm and &lt;90cm,
 include in this variable</td>
 </tr>
 <tr class="odd">
 <td>Biomass Density of Large Pelagics &gt;=90cm</td>
-<td><strong>bp 90cm</strong></td>
+<td><strong>bp90cm</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
-<p>m onthly</p></td>
+<p>monthly</p></td>
 <td>If a pelagic species and L infinity is &gt;=90cm, include in this
 variable</td>
 </tr>
 <tr class="even">
 <td>Biomass Density of Small Demersals &lt;30cm</td>
-<td><strong>bd 30cm</strong></td>
+<td><strong>bd30cm</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1259,7 +1153,7 @@ include in this variable</td>
 </tr>
 <tr class="even">
 <td>Biomass Density of Large Demersals &gt;=90cm</td>
-<td><strong>bd 90cm</strong></td>
+<td><strong>bd90cm</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1268,7 +1162,7 @@ variable</td>
 </tr>
 <tr class="odd">
 <td>Catch Density of Small Pelagics &lt;30cm</td>
-<td><strong>cp 30cm</strong></td>
+<td><strong>cp30cm</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1276,7 +1170,7 @@ variable</td>
 </tr>
 <tr class="even">
 <td>Catch Density of Medium Pelagics &gt;=30cm and &lt;90cm</td>
-<td><strong>cp30to 90cm</strong></td>
+<td><strong>cp 30to90cm</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1285,7 +1179,7 @@ variable</td>
 </tr>
 <tr class="odd">
 <td>Catch Density of Large Pelagics &gt;=90cm</td>
-<td><strong>cp 90cm</strong></td>
+<td><strong>cp90cm</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1293,7 +1187,7 @@ variable</td>
 </tr>
 <tr class="even">
 <td>Catch Density of Small Demersals &lt;30cm</td>
-<td><strong>cd 30cm</strong></td>
+<td><strong>cd30cm</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1301,7 +1195,7 @@ variable</td>
 </tr>
 <tr class="odd">
 <td>Catch Density of Medium Demersals &gt;=30cm and &lt;90cm</td>
-<td><strong>cd30to 90cm</strong></td>
+<td><strong>cd 30to90cm</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1310,7 +1204,7 @@ variable</td>
 </tr>
 <tr class="even">
 <td>Catch Density of Large Demersals &gt;=90cm</td>
-<td><strong>cd 90cm</strong></td>
+<td><strong>cd90cm</strong></td>
 <td>g m-2</td>
 <td><p>0.25° grid</p>
 <p>m onthly</p></td>
@@ -1332,7 +1226,7 @@ the above global climate and fishing effort forcing inputs.
 Region-specific climate forcing variables will be made available here:
 
 ``` linux
-/work/bb0820/ISIMIP/ISIMIP3a/InputData/climate/ocean/<obsclim> or <ctrlclim>/regional/
+/work/bb0820/ISIMIP/ISIMIP3b/InputData/climate/ocean/<obsclim> or <ctrlclim>/regional/
 ```
 
 A .csv file with fishing effort extracted for regional model ecosystems
