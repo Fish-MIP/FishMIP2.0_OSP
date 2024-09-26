@@ -10,11 +10,14 @@ authors:
 - family-names: "Tittensor"
   given-names: "Derek P."
   orcid: "https://orcid.org/0000-0000-0000-0000"
-- family-names: ""
-  given-names: "The Fisheries and Marine Ecosystems Model Intercomparison Project"
+- family-names: "Eddy"
+  given-names: "Tyler"
   orcid: "https://orcid.org/0000-0000-0000-0000"
-title: "FishMIP_2023_3b_Protocol"
-version: 1.0.0
+- family-names: ""
+  given-names: "The FishMIP Scenarios Working Group"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "FishMIP 2.0: Ocean System Pathways Simulation Protocol"
+version: 0.0.0
 doi:
 date-released: 2023-12-19
-url: "https://github.com/Fish-MIP/FishMIP_2023_3b_Protocol"
+url: "https://github.com/Fish-MIP/FishMIP2.0_OSP"
